@@ -108,25 +108,25 @@
 					<img class="img-responsive" src="images/watch.png" alt="">
 				</div>				
 				<div class="col-md-4 col-md-offset-2 col-sm-5">
-					<h2>our next event in</h2>
+					<h2>Nuestro evento en:</h2>
 				</div>				
 				<div class="col-sm-7 col-md-6">					
 					<ul id="countdown">
 						<li>					
 							<span class="days time-font">00</span>
-							<p>days </p>
+							<p>Dias </p>
 						</li>
 						<li>
 							<span class="hours time-font">00</span>
-							<p class="">hours </p>
+							<p class="">Horas </p>
 						</li>
 						<li>
 							<span class="minutes time-font">00</span>
-							<p class="">minutes</p>
+							<p class="">Minutos</p>
 						</li>
 						<li>
 							<span class="seconds time-font">00</span>
-							<p class="">seconds</p>
+							<p class="">segundos</p>
 						</li>				
 					</ul>
 				</div>
@@ -142,7 +142,7 @@
 			<div class="row">
 				<div class="col-sm-12 col-md-9">
 					<div id="event-carousel" class="carousel slide" data-interval="false">
-						<h2 class="heading">THE ROCKING Performers</h2>
+						<h2 class="heading">CONFERENCISTAS</h2>
 						<a class="even-control-left" href="#event-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
 						<a class="even-control-right" href="#event-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
 						<div class="carousel-inner">
@@ -151,22 +151,22 @@
 									<div class="col-sm-4">
 										<div class="single-event">
 											<img class="img-responsive" src="images/event/event1.jpg" alt="event-image">
-											<h4>Chester Bennington</h4>
-											<h5>Vocal</h5>
+											<h4>Nelson Enrique Molano Sanchez</h4>
+											<h5>Coordinador Nacional Redvolución en Ministerio de Tecnologías de la Información y las Comunicaciones</h5>
 										</div>
 									</div>
 									<div class="col-sm-4">
 										<div class="single-event">
 											<img class="img-responsive" src="images/event/event2.jpg" alt="event-image">
-											<h4>Mike Shinoda</h4>
-											<h5>vocals, rhythm guitar</h5>
+											<h4>Edwin Zácipa</h4>
+											<h5>International Business Manager innovating in fintech ventures</h5>
 										</div>
 									</div>
 									<div class="col-sm-4">
 										<div class="single-event">
 											<img class="img-responsive" src="images/event/event3.jpg" alt="event-image">
-											<h4>Rob Bourdon</h4>
-											<h5>drums</h5>
+											<h4>Julián R. Figueroa</h4>
+											<h5>CTO @ Zentrífuga</h5>
 										</div>
 									</div>
 								</div>
@@ -322,22 +322,7 @@
 					</div>
 					<div class="col-sm-5">
 						<div id="contact-section">
-							<h3>Send a message</h3>
-					    	<div class="status alert alert-success" style="display: none"></div>
-					    	<form id="main-contact-form" class="contact-form" name="contact-form" method="post" action="sendemail.php">
-					            <div class="form-group">
-					                <input type="text" name="name" class="form-control" required="required" placeholder="Name">
-					            </div>
-					            <div class="form-group">
-					                <input type="email" name="email" class="form-control" required="required" placeholder="Email ID">
-					            </div>
-					            <div class="form-group">
-					                <textarea name="message" id="message" required="required" class="form-control" rows="4" placeholder="Enter your message"></textarea>
-					            </div>                        
-					            <div class="form-group">
-					                <button type="submit" class="btn btn-primary pull-right">Send</button>
-					            </div>
-					        </form>	       
+							<script>(function(t,e,s,n){var o,c,r;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),c=o[o.length-1],r=e.createElement(s),r.type="text/javascript",r.async=!0,r.id=n,r.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/mpHTN13FCkRM3ASqCV6rsPXFVr56taH61hxmOUrq6QZG70dCDYvgEltg502Ysbl1.js"].join(""),c.parentNode.insertBefore(r,c))})(window,document,"script","smcx-sdk");</script><a style="font: 12px Helvetica, sans-serif; color: #999; text-decoration: none;" href=https://es.surveymonkey.com/mp/customer-satisfaction-surveys/> Cree su propia encuesta de comentarios de usuarios </a>    
 					    </div>
 					</div>
 				</div>
@@ -349,7 +334,7 @@
     <footer id="footer">
         <div class="container">
             <div class="text-center">
-                <p> Copyright  &copy;2014<a target="_blank" href="http://shapebootstrap.net/"> Evento </a>Theme. All Rights Reserved. <br> Designed by <a target="_blank" href="http://shapebootstrap.net/">ShapeBootstrap</a></p>                
+                <p> Copyright  &copy;2016 ConversaTic</p>                
             </div>
         </div>
     </footer>
