@@ -331,6 +331,47 @@
 							<script>(function(t,e,s,n){var o,c,r;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),c=o[o.length-1],r=e.createElement(s),r.type="text/javascript",r.async=!0,r.id=n,r.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/mpHTN13FCkRM3ASqCV6rsPXFVr56taH61hxmOUrq6QZG70dCDYvgEltg502Ysbl1.js"].join(""),c.parentNode.insertBefore(r,c))})(window,document,"script","smcx-sdk");</script><a style="font: 12px Helvetica, sans-serif; color: #999; text-decoration: none;" href=https://es.surveymonkey.com/mp/customer-satisfaction-surveys/> Cree su propia encuesta de comentarios de usuarios </a>    
 					    </div>
 					</div>
+					<div class="col-sm-5">
+						<div id="contact-section">
+							<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">	
+							{!!Form::open(['route'=>'store', 'method'=>'POST'])!!}
+						<div class="form-group">
+								{!!Form::label('name','Ingresa tu nombre')!!}
+								!!Form::text('name',null,['class'=>'form-control','required'])!!}
+						</div>
+						<div class="form-group">
+								{!!Form::label('email','Ingresa tu email')!!}
+								!!Form::text('email',null,['class'=>'form-control','required'])!!}
+						</div>
+						<div class="form-group">
+								{!!Form::label('edad','Ingresa tu edad')!!}
+								!!Form::select('edad',['10a20'=>'Mayor a 10 y menor a 20 años','20a30'=>'Mayor a 20 y menor a 30 años','30a40'=>'Mayor a 30 y menor a 40 años','40aINF'=>'Mayor a 40 años'],null,['class'=>'form-control','required'])!!}
+						</div>
+						<div class="form-group">
+								{!!Form::label('rol','Ingresa tu rol')!!}
+								!!Form::text('rol',['Estudiante'=>'Estudiante','Empresario'=>'Empresario','Publico'=>'Servidor publico','General'=>'Comunidad en general'],null,['class'=>'form-control','required'])!!}
+						</div>
+						<div class="form-group">
+								{!!Form::label('genero','Ingresa tu genero')!!}
+								!!Form::text('genero',['F'=>'Femenino','M'=>'Masculino','O'=>'Otro'],null,['class'=>'form-control','required'])!!}
+						</div>
+						<div class="form-group">
+								{!!Form::label('ubicacion','Ingresa desde que sitio vienes')!!}
+								!!Form::text('ubicacion',null,['class'=>'form-control','required'])!!}
+						</div>
+						<div class="form-group">
+								{!!Form::label('twitter','Ingresa tu pagina de twitter')!!}
+								!!Form::text('twitter',null,['class'=>'form-control'])!!}
+						</div>
+						<div class="form-group">
+								{!!Form::label('telefono','Ingresa tu telefono')!!}
+								!!Form::number('telefono',null,['class'=>'form-control','required'])!!}
+						</div>
+						{!!Form::submit('Registrar',['class'=>'btn btn-primary'])!!}
+						{!!Form::close()!!}
+	</div>
+					    </div>
+					</div>
 				</div>
 			</div>
 		</div>		
