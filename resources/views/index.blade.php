@@ -3,8 +3,13 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    
+<meta property="og:url"                content="http://conversa-tic.audiplantas.com/" />
+<meta property="og:type"               content="Conversa TIC" />
+<meta property="og:title"              content="Conversa TIC" />
+<meta property="og:description"        content="Un dia de inspiracion para pensar y actuar en grande" />
+
+
     <title>ConversaTic</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
@@ -12,15 +17,7 @@
 	<link href="css/animate.css" rel="stylesheet">	
 	<link href="css/responsive.css" rel="stylesheet">
 
-    <!--[if lt IE 9]>
-	    <script src="js/html5shiv.js"></script>
-	    <script src="js/respond.min.js"></script>
-    <![endif]-->       
-    <link rel="shortcut icon" href="images/ico/favicon.ico">
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="images/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
 </head><!--/head-->
 
 <body>
@@ -154,6 +151,11 @@
 											<div class="text-con">
 												<h4>Nelson Enrique Molano Sanchez</h4>
 											<h5>Coordinador Nacional Redvolución en Ministerio de Tecnologías de la Información y las Comunicaciones</h5>
+											<a href="https://www.linkedin.com/in/nmolano">
+
+											<font color="red">Ver perfil Completo</font>
+											<img  WIDTH=70 HEIGHT=70 src="images/link.png" alt="event-image">
+											</a>
 											</div>
 										</div>
 									</div>
@@ -163,6 +165,8 @@
 											<div class="text-con">
 											<h4>Edwin Zácipa</h4>
 											<h5>International Business Manager innovating in fintech ventures</h5>
+											<a href="https://www.linkedin.com/in/fejzn"><font color="red">Ver perfil Completo</font><img  WIDTH=70 HEIGHT=70 src="images/link.png" alt="event-image"></a>
+											
 											</div>
 										</div>
 									</div>
@@ -172,6 +176,8 @@
 											<div class="text-con">
 											<h4>Julián R. Figueroa</h4>
 											<h5>CTO @ Zentrífuga</h5>
+											<a href="https://www.linkedin.com/in/julianrfigueroa"><font color="red">Ver perfil Completo</font><img  WIDTH=70 HEIGHT=70 src="images/link.png" alt="event-image"></a>
+											
 											</div>
 										</div>
 									</div>
@@ -229,32 +235,11 @@
 	
 	<section id="twitter">
 		<div id="twitter-feed" class="carousel slide" data-interval="false">
-			<div class="twit">
-				<img class="img-responsive" src="images/twit.png" alt="twit">
-			</div>
-			<div class="row">
-				<div class="col-sm-6 col-sm-offset-3">
-					<div class="text-center carousel-inner center-block">
-						<div class="item active">
-							<img src="images/twitter/twitter1.png" alt="">
-							<p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>
-							<a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>
-						</div>
-						<div class="item">
-							<img src="images/twitter/twitter2.png" alt="">
-							<p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>
-							<a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>
-						</div>
-						<div class="item">
-							<img src="images/twitter/twitter3.png" alt="">
-							<p>In hac habitasse platea dictumst. Nam pulvinar, odio sed rhoncus suscipit </p>
-							<a href="#">http://t.co/yY7s1IfrAb 2 days ago</a>
-						</div>
-					</div>
-					<a class="twitter-control-left" href="#twitter-feed" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-					<a class="twitter-control-right" href="#twitter-feed" data-slide="next"><i class="fa fa-angle-right"></i></a>
-				</div>
-			</div>
+		<center>
+			       <a class="twitter-timeline"  href="https://twitter.com/search?q=%40ConversaTICFusa" data-widget-id="785346546401439744">Tweets sobre @ConversaTICFusa</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+          
+          </center>
 		</div>		
 	</section><!--/#twitter-feed-->
 	
@@ -326,49 +311,62 @@
 							</address>
 						</div>
 					</div>
-					<div class="col-sm-5">
+				<div class="col-sm-5">
 						<div id="contact-section">
-							<script>(function(t,e,s,n){var o,c,r;t.SMCX=t.SMCX||[],e.getElementById(n)||(o=e.getElementsByTagName(s),c=o[o.length-1],r=e.createElement(s),r.type="text/javascript",r.async=!0,r.id=n,r.src=["https:"===location.protocol?"https://":"http://","widget.surveymonkey.com/collect/website/js/mpHTN13FCkRM3ASqCV6rsPXFVr56taH61hxmOUrq6QZG70dCDYvgEltg502Ysbl1.js"].join(""),c.parentNode.insertBefore(r,c))})(window,document,"script","smcx-sdk");</script><a style="font: 12px Helvetica, sans-serif; color: #999; text-decoration: none;" href=https://es.surveymonkey.com/mp/customer-satisfaction-surveys/> Cree su propia encuesta de comentarios de usuarios </a>    
-					    </div>
-					</div>
-					<div class="col-sm-5">
-						<div id="contact-section">
-							<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">	
-							{!!Form::open(['route'=>'store', 'method'=>'POST'])!!}
+							<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+							<form method="POST" action="/registro" accept-charset="UTF-8">
+							<input name="_token" type="hidden" value="{{ csrf_token() }}">	
 						<div class="form-group">
-								{!!Form::label('name','Ingresa tu nombre')!!}
-								!!Form::text('name',null,['class'=>'form-control','required'])!!}
+								<label for="name">Ingresa tu nombre</label>
+								<input class="form-control" name="name" type="text" required>
 						</div>
 						<div class="form-group">
-								{!!Form::label('email','Ingresa tu email')!!}
-								!!Form::text('email',null,['class'=>'form-control','required'])!!}
+						<label for="email">Ingresa tu email</label>
+								<input class="form-control" name="email" type="text" required>
 						</div>
 						<div class="form-group">
-								{!!Form::label('edad','Ingresa tu edad')!!}
-								!!Form::select('edad',['10a20'=>'Mayor a 10 y menor a 20 años','20a30'=>'Mayor a 20 y menor a 30 años','30a40'=>'Mayor a 30 y menor a 40 años','40aINF'=>'Mayor a 40 años'],null,['class'=>'form-control','required'])!!}
+								<label for="edad">Ingresa tu edad</label>
+<select name="edad" class="form-control" required>
+  <option value="10a20">Mayor a 10 y menor a 20 </option>
+  <option value="20a30">Mayor a 20 y menor a 30 </option>
+  <option value="30a40">Mayor a 30 y menor a 40 </option>
+  <option value="40aINF">Mayor a 40 años</option>
+</select>
 						</div>
 						<div class="form-group">
-								{!!Form::label('rol','Ingresa tu rol')!!}
-								!!Form::text('rol',['Estudiante'=>'Estudiante','Empresario'=>'Empresario','Publico'=>'Servidor publico','General'=>'Comunidad en general'],null,['class'=>'form-control','required'])!!}
+								<label for="rol">Ingresa tu rol</label>
+<select name="rol" class="form-control" required>
+  <option value="Estudiante">Estudiante </option>
+  <option value="Empresario">Empresario</option>
+  <option value="Publico">Servidor publico </option>
+  <option value="General">Comunidad en general</option>
+</select>
+
+
+			
 						</div>
 						<div class="form-group">
-								{!!Form::label('genero','Ingresa tu genero')!!}
-								!!Form::text('genero',['F'=>'Femenino','M'=>'Masculino','O'=>'Otro'],null,['class'=>'form-control','required'])!!}
+								<label for="genero">Ingresa tu genero</label>
+								<select name="genero" class="form-control" required>
+  <option value="M">Masculino </option>
+  <option value="F">Femenino</option>
+  <option value="O">Otro </option>
+</select>
 						</div>
 						<div class="form-group">
-								{!!Form::label('ubicacion','Ingresa desde que sitio vienes')!!}
-								!!Form::text('ubicacion',null,['class'=>'form-control','required'])!!}
+								<label for="ubicacion">Ingresa desde que sitio vienes</label>
+								<input class="form-control" name="ubicacion" type="text" required>
 						</div>
 						<div class="form-group">
-								{!!Form::label('twitter','Ingresa tu pagina de twitter')!!}
-								!!Form::text('twitter',null,['class'=>'form-control'])!!}
+								<label for="twitter">Ingresa tu pagina de twitter</label>
+								<input class="form-control" name="twitter" type="text" required>
 						</div>
 						<div class="form-group">
-								{!!Form::label('telefono','Ingresa tu telefono')!!}
-								!!Form::number('telefono',null,['class'=>'form-control','required'])!!}
+								<label for="twitter">Ingresa tu telefono</label>
+								<input class="form-control" name="telefono" type="text" required>
 						</div>
-						{!!Form::submit('Registrar',['class'=>'btn btn-primary'])!!}
-						{!!Form::close()!!}
+						<input class="form-control" name="registro" value="Registrar" type="submit" required>
+						</form>
 	</div>
 					    </div>
 					</div>

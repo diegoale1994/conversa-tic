@@ -11,4 +11,5 @@
 |
 */
 Route::get('/',"FrontController@index");
+Route::Resource('registro',"UserController");
 

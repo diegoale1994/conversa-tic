@@ -5,10 +5,12 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
-
 use App\Http\Controllers\Controller;
+use App\User;
+use Redirect;
+use DB;
 
-class FrontController extends Controller
+class UserController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -17,7 +19,7 @@ class FrontController extends Controller
      */
     public function index()
     {
-       return view('index');
+        //
     }
 
     /**
@@ -38,7 +40,20 @@ class FrontController extends Controller
      */
     public function store(Request $request)
     {
+        User::create([
+        'name' => $request['name'],
+        'email' => $request['email'],
+        'edad' => $request['edad'],
+        'rol' => $request['rol'],
+        'genero' => $request['genero'],
+        'ubicacion' => $request['ubicacion'],
+        'twitter' => $request['twitter'],
+        'telefono' => $request['telefono']
+]);
 
+        $numeroRegistrados = DB::table('users')->count();
+
+    return redirect('/')->with('numeroRegistrados',$numeroRegistrados);
     }
 
     /**
