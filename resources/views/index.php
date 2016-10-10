@@ -255,10 +255,9 @@
 					<a class="twitter-control-right" href="#twitter-feed" data-slide="next"><i class="fa fa-angle-right"></i></a>
 				</div>
 			</div>
-
-
-
-
+		</div>		
+	</section><!--/#twitter-feed-->
+	
 	<section id="sponsor">
 		<div id="sponsor-carousel" class="carousel slide" data-interval="false">
 			<div class="container">
