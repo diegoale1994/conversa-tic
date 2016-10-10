@@ -75,11 +75,10 @@ jQuery(function($) {'use strict',
 
 	map = new GMaps({
 		el: '#gmap',
-		lat: 43.04446,
-		lng: -76.130791,
+		lat:  4.338748,
+		lng: -74.367333,
 		scrollwheel:false,
 		zoom: 16,
-		zoomControl : false,
 		panControl : false,
 		streetViewControl : false,
 		mapTypeControl: false,
@@ -88,18 +87,42 @@ jQuery(function($) {'use strict',
 	});
 
 	var image = 'images/map-icon.png';
-	map.addMarker({
-		lat: 43.04446,
-		lng: -76.130791,
+    var marker =	map.addMarker({
+		title: 'Conversa Tic',
+		lat:  4.338748,
+		lng: -74.367333,
 		icon: image,
 		animation: google.maps.Animation.DROP,
 		verticalAlign: 'bottom',
 		horizontalAlign: 'center',
 		backgroundColor: '#3e8bff',
+
 	});
 
+ var contentString = '<div id="content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h1 id="firstHeading" class="firstHeading">Coversa TIC</h1>'+
+      '<div id="bodyContent">'+
+      '<p><b>Coversa TIC</b>, un dia de inspiracion para pensar y actuar en grande '+
+      '</p>'+
+      '<p>Fecha: Octubre 21 de 2016 '+
+      '</p>'+
+      '<p>Hora: 5PM '+
+      '</p>'+
+      '</div>'+
+      '</div>';
 
-	var styles = [ 
+  var infowindow = new google.maps.InfoWindow({
+    content: contentString
+  });
+
+
+ marker.addListener('click', function() {
+    infowindow.open(map, marker);
+  });
+
+var styles = [ 
 
 	{
 		"featureType": "road",
@@ -121,17 +144,17 @@ jQuery(function($) {'use strict',
 		"stylers": [
 		{ "color": "#000000" }
 		]
-	},{
+	}/*,{
 		"featureType": "poi",
 		"stylers": [
 		{ "color": "#d9d9d9" }
 		]
-	},{
+	}*/,{
 		"elementType": "labels.text",
 		"stylers": [
 		{ "saturation": 1 },
 		{ "weight": 0.1 },
-		{ "color": "#000000" }
+		{ "color": "red" }
 		]
 	}
 
@@ -144,6 +167,7 @@ jQuery(function($) {'use strict',
 	});
 
 	map.setStyle("map_style");
+	
 }());
 
 

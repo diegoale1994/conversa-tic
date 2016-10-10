@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
-    <title>Evento | Free Onepage Event Template | ShapeBootstrap</title>
+    <title>ConversaTic</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
@@ -29,10 +29,10 @@
 			<div class="container">
 				<div class="header-top">
 					<div class="pull-right social-icons">
-						<a href="#"><i class="fa fa-twitter"></i></a>
-						<a href="#"><i class="fa fa-facebook"></i></a>
-						<a href="#"><i class="fa fa-google-plus"></i></a>
-						<a href="#"><i class="fa fa-youtube"></i></a>
+						<a target="_blank" href="https://twitter.com/ConversaTICFusa"><i class="fa fa-twitter"></i></a>
+						<a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
+						<a target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
+						<a target="_blank" href="#"><i class="fa fa-youtube"></i></a>
 					</div>
 				</div>     
 		        <div class="row">	        		
@@ -51,7 +51,7 @@
 		                <ul class="nav navbar-nav navbar-right">                 
 		                    <li class="scroll active"><a href="#home">Home</a></li>
 		                    <li class="scroll"><a href="#explore">Explore</a></li>                         
-		                    <li class="scroll"><a href="#event">Event</a></li>
+		                    <li class="scroll"><a href="#event">SPEAKERS</a></li>
 		                    <li class="scroll"><a href="#about">About</a></li>                     
 		                    <li class="no-scroll"><a href="#twitter">Twitter</a></li>
 		                    <li><a class="no-scroll" href="#" target="_blank">PURCHASE TICKETS</a></li>
@@ -142,7 +142,7 @@
 			<div class="row">
 				<div class="col-sm-12 col-md-9">
 					<div id="event-carousel" class="carousel slide" data-interval="false">
-						<h2 class="heading">CONFERENCISTAS</h2>
+						<h2 class="heading title-head">SPEAKERS</h2>
 						<a class="even-control-left" href="#event-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
 						<a class="even-control-right" href="#event-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
 						<div class="carousel-inner">
@@ -150,27 +150,36 @@
 								<div class="row">
 									<div class="col-sm-4">
 										<div class="single-event">
-											<img class="img-responsive" src="images/event/event1.jpg" alt="event-image">
-											<h4>Nelson Enrique Molano Sanchez</h4>
+											<center><img class="img-responsive img-circle" src="images/event/event1.jpg" alt="event-image"></center>
+											<div class="text-con">
+												<h4>Nelson Enrique Molano Sanchez</h4>
 											<h5>Coordinador Nacional Redvolución en Ministerio de Tecnologías de la Información y las Comunicaciones</h5>
+											</div>
 										</div>
 									</div>
 									<div class="col-sm-4">
 										<div class="single-event">
-											<img class="img-responsive" src="images/event/event2.jpg" alt="event-image">
+											<center><img class="img-responsive img-circle" src="images/event/event2.jpg" alt="event-image"></center>
+											<div class="text-con">
 											<h4>Edwin Zácipa</h4>
 											<h5>International Business Manager innovating in fintech ventures</h5>
+											</div>
 										</div>
 									</div>
 									<div class="col-sm-4">
 										<div class="single-event">
-											<img class="img-responsive" src="images/event/event3.jpg" alt="event-image">
+											<center><img class="img-responsive img-circle" src="images/event/event3.jpg" alt="event-image"></center>
+											<div class="text-con">
 											<h4>Julián R. Figueroa</h4>
 											<h5>CTO @ Zentrífuga</h5>
+											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+
+						
+
 							<div class="item">
 								<div class="row">
 									<div class="col-sm-4">
@@ -211,9 +220,9 @@
 			<img class="img-responsive" src="images/guitar2.jpg" alt="guitar">
 		</div>
 		<div class="about-content">					
-					<h2>About Evento</h2>
-					<p>We have created an extremely positive and relaxed environment all geared towards developing your skills whether you are an absolute beginner trying to get off the ground or an accomplished player looking to move to the next level. Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
-					<a href="#" class="btn btn-primary">View Date & Place <i class="fa fa-angle-right"></i></a>
+					<h2>Conversa TIC</h2>
+					<p style='text-align: justify;'>Somos estudiantes de universidad de Cundinamarca buscando un encuentro informal con emprendedores de la región de Sumapaz, mediante la invitación a tomarse una Pola generaremos proyectos en el ámbito social, económico y ambiental.</p>
+				<!---	<a href="#" class="btn btn-primary">View Date & Place <i class="fa fa-angle-right"></i></a> -->
 				
 		</div>
 	</section><!--/#about-->
@@ -246,15 +255,16 @@
 					<a class="twitter-control-right" href="#twitter-feed" data-slide="next"><i class="fa fa-angle-right"></i></a>
 				</div>
 			</div>
-		</div>		
-	</section><!--/#twitter-feed-->
-	
+
+
+
+
 	<section id="sponsor">
 		<div id="sponsor-carousel" class="carousel slide" data-interval="false">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-10">
-						<h2>Sponsors</h2>			
+						<h2>PARTNERS</h2>			
 						<a class="sponsor-control-left" href="#sponsor-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
 						<a class="sponsor-control-right" href="#sponsor-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
 						<div class="carousel-inner">
@@ -305,18 +315,15 @@
 						<div class="contact-text">
 							<h3>Contact</h3>
 							<address>
-								E-mail: promo@party.com<br>
-								Phone: +1 (123) 456 7890<br>
-								Fax: +1 (123) 456 7891
+								E-mail: conversatic@gmail.com<br>
+								Phone: +57  312....<br>
 							</address>
 						</div>
 						<div class="contact-address">
 							<h3>Contact</h3>
 							<address>
-								Unit C2, St.Vincent's Trading Est.,<br>
-								Feeder Road,<br>
-								Bristol, BS2 0UY<br>
-								United Kingdom
+								Julian Salinas<br>
+								Fusagasuga ,Colombia
 							</address>
 						</div>
 					</div>
@@ -339,10 +346,30 @@
         </div>
     </footer>
     <!--/#footer-->
-  
+<style type="text/css">
+	#content{
+		color: black;
+	}
+	.text-con{
+									
+	    text-align: center;
+	    color:#bdc3c7;
+	}
+	.text-con > h4{
+									
+	}
+	#event{
+	    background-image: url("../images/twitter-bg.jpg");
+		  }
+	#event-carousel .title-head{
+		color: black;
+								}
+</style>
+
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB73-N-hRiVxeHcVKgLyRclsx5YpW1-O1M&callback=initMap"
+    ></script>
   	<script type="text/javascript" src="js/gmaps.js"></script>
 	<script type="text/javascript" src="js/smoothscroll.js"></script>
     <script type="text/javascript" src="js/jquery.parallax.js"></script>
