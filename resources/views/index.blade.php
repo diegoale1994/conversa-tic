@@ -21,6 +21,27 @@
 
 </head><!--/head-->
 
+@if (Session::has('message'))
+
+@if (Session::get('message') != 'Registro Exitoso! ' )
+    <div class="alert alert-danger" id="msg" style="margin-bottom: 0px ; background-color:#C34C39; color:#800818; border:1px solid #C34C39; border-radius:0px;">
+	  {{ Session::get('message') }}
+	</div>
+@endif
+
+@endif
+
+
+@if (Session::has('message'))
+
+@if (Session::get('message') == 'Registro Exitoso! ' )
+    <div class="alert alert-success" id="msg" style="margin-bottom: 0px; background-color:#75B46E; color:green; border:1px solid #75B46E; border-radius:0px; ">
+	  {{ Session::get('message') }}
+	</div>
+@endif
+
+@endif
+
 <body>
 	<header id="header" role="banner">		
 		<div class="main-nav">
@@ -62,11 +83,7 @@
         </div>                    
     </header>
     <!--/#header--> 
-@if (Session::has('message'))
-	<div class="alert alert-success">
-  {{ Session::get('message') }}
-</div>
-@endif
+
     <section id="home">	
 		<div id="main-slider" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
@@ -80,22 +97,25 @@
 					<div class="carousel-caption">
 						<h2>Conversa TIC <strong>Fusagasuga</strong> </h2>
 						<h4>Un dia de inspiracion para pensar y actuar en grande</h4>
+						<h4 class="free"><a href="#contact">Registrate </a>Entrada libre !</h4>
 						<a target="_blank" href="https://twitter.com/ConversaTICFusa">@ConversaTICFusa <!--<i class="fa fa-angle-right"></i> --></a> 
 					</div>
 				</div>
 				<div class="item">
-					<img class="img-responsive" src="images/slider/bg2.jpg" alt="slider">	
+					<img class="img-responsive" src="images/slider/bg2.jpg" alt="slider">						
 					<div class="carousel-caption">
 						<h2>Conversa TIC <strong>Fusagasuga</strong> </h2>
 						<h4>Un dia de inspiracion para pensar y actuar en grande</h4>
+						<h4 class="free"><a href="#contact">Registrate </a>Entrada libre !</h4>
 						<a target="_blank" href="https://twitter.com/ConversaTICFusa">@ConversaTICFusa <!--<i class="fa fa-angle-right"></i> --></a> 
 					</div>
 				</div>
 				<div class="item">
-					<img class="img-responsive" src="images/slider/bg3.jpg" alt="slider">	
+					<img class="img-responsive" src="images/slider/bg3.jpg" alt="slider">						
 					<div class="carousel-caption">
 						<h2>Conversa TIC <strong>Fusagasuga</strong> </h2>
 						<h4>Un dia de inspiracion para pensar y actuar en grande</h4>
+						<h4 class="free"><a href="#contact">Registrate </a>Entrada libre !</h4>
 						<a target="_blank" href="https://twitter.com/ConversaTICFusa">@ConversaTICFusa <!--<i class="fa fa-angle-right"></i> --></a> 
 					</div>
 				</div>				
@@ -143,11 +163,11 @@
 	<section id="event">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-9 col-md-9">
+				<div class="col-sm-12 col-md-12">
 					<div id="event-carousel" class="carousel slide" data-interval="false">
 						<h2 class="heading title-head">SPEAKERS</h2>
-						<a class="even-control-left" href="#event-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-						<a class="even-control-right" href="#event-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+					<!--	<a class="even-control-left" href="#event-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+						<a class="even-control-right" href="#event-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>-->
 						<div class="carousel-inner">
 							<div class="item active">
 								<div class="row">
@@ -157,10 +177,10 @@
 											<div class="text-con">
 												<h4>Nelson Enrique Molano Sanchez</h4>
 											<h5>Coordinador Nacional Redvolución en Ministerio de Tecnologías de la Información y las Comunicaciones</h5>
-											<a target="_blank" href="https://www.linkedin.com/in/nmolano">
+											<a target="_blank" href="https://www.linkedin.com/in/nmolano" class="color-link">
 
-											<font color="red">Ver perfil Completo</font>
-											<img  WIDTH=70 HEIGHT=70 src="images/link.png" alt="event-image">
+											<font >Ver perfil Completo</font>
+											<img  WIDTH=35 HEIGHT=35 src="images/link.png" alt="event-image" >
 											</a>
 											</div>
 										</div>
@@ -171,7 +191,7 @@
 											<div class="text-con">
 											<h4>Edwin Zácipa</h4>
 											<h5>International Business Manager innovating in fintech ventures</h5>
-											<a target="_blank" href="https://www.linkedin.com/in/fejzn"><font color="red">Ver perfil Completo</font><img  WIDTH=70 HEIGHT=70 src="images/link.png" alt="event-image"></a>
+											<a target="_blank" href="https://www.linkedin.com/in/fejzn" class="color-link"><font >Ver perfil Completo</font><img  WIDTH=35 HEIGHT=35 src="images/link.png" alt="event-image" ></a>
 											
 											</div>
 										</div>
@@ -181,8 +201,8 @@
 											<center><img class="img-responsive img-circle" src="images/event/event3.jpg" alt="event-image"></center>
 											<div class="text-con">
 											<h4>Julián R. Figueroa</h4>
-											<h5>CTO @ Zentrífuga</h5>
-											<a target="_blank" href="https://www.linkedin.com/in/julianrfigueroa"><font color="red">Ver perfil Completo</font><img  WIDTH=70 HEIGHT=70 src="images/link.png" alt="event-image"></a>
+											<h5>Emprendedor.Open Innovation, Hackathons, Software Development, Entrepreneurship.</h5>
+											<a target="_blank" href="https://www.linkedin.com/in/julianrfigueroa" class="color-link"><font >Ver perfil Completo</font><img  WIDTH=35 HEIGHT=35 src="images/link.png" alt="event-image" ></a>
 											
 											</div>
 										</div>
@@ -193,8 +213,12 @@
 											<center><img class="img-responsive img-circle" src="images/event/Jairo.jpg" alt="event-image"></center>
 											<div class="text-con">
 											<h4>Jairo Alonso García Hurtado</h4>
-											<h5></h5>
-											<a target="_blank" href="https://www.linkedin.com/in/"><font color="red" >Ver perfil Completo</font><img  WIDTH=70 HEIGHT=70 src="images/link.png" alt="event-image"></a>
+											<h5>CIS - Chief Information Security
+											MISTIC - Master Seguridad de las TICs
+											C|EH, L|PT, C|HFI, EC|SA, C|FRI, C|IDF, QGCS, Sec+, C|TI 
+											 </h5>
+											<a target="_blank" href="" class="color-link"><font >jairo.garcia@theeaglelabs.com</font></a>
+
 											
 											</div>
 										</div>
@@ -206,9 +230,9 @@
 						</div>
 					</div>
 				</div>
-				<div class="guitar">
+				<!-- <div class="guitar">
 					<img class="img-responsive" src="images/guitar.png" alt="guitar">
-				</div> 
+				</div> --> 
 			</div>			
 		</div>
 	</section><!--/#event-->
@@ -261,42 +285,19 @@
 		<div id="sponsor-carousel" class="carousel slide" data-interval="false">
 			<div class="container">
 				<div class="row">
-					<div class="col-sm-10">
+					<div class="col-sm-6">
 						<h2>PARTNERS</h2>			
-					<!--	<a class="sponsor-control-left" href="#sponsor-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-						<a class="sponsor-control-right" href="#sponsor-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a> -->
-						<div class="carousel-inner">
-							<div class="item active">
-								<ul>
-									<li><center><img class="img-responsive img-circle" src="images/event/Jairo.jpg" alt="event-image"></center>
+				
+									<center><img class="img-responsive img-circle" src="images/EagleLabs.png" alt="event-image"></center>
                                         <div class="text-con">
-											<h3>Jairo Alonso García Hurtado</h3>
-											<h5><strong>THE EAGLE LABS</strong>, Empresa líder en la prestación de servicios de "Hacking Ético" y "Penetration Test", con soluciones innovadoras enfocadas a verificar los controles de ciberseguridad con los más altos estándares de calidad, generando total confianza en nuestros clientes y nuestra sociedad desde el año 2012, con más de quinientos (500) proyectos asociados a nuestros servicios.
+											<h3><strong>THE EAGLE LABS</strong></h3>
+											<h5> Empresa líder en la prestación de servicios de "Hacking Ético" y "Penetration Test", con soluciones innovadoras enfocadas a verificar los controles de ciberseguridad con los más altos estándares de calidad, generando total confianza en nuestros clientes y nuestra sociedad desde el año 2012, con más de quinientos (500) proyectos asociados a nuestros servicios.
                                             </h5>
 
 										<h5><a class="a-show" target="_blank" href="http://www.theeaglelabs.com/"><font color="a-show" >http://www.theeaglelabs.com/</font></a></h5>
 											
-											</div>
-									</li>
-								
-								</ul>
-								<style type="text/css">
-									.a-show{
-									 color: black;
-									 font-size: 25px;
-									}
-								</style>
-							</div>
-						<!--	<div class="item">
-								<ul>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor6.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor5.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor4.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor3.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor2.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor1.png" alt=""></a></li>
-								</ul>
-							</div> -->
+										</div>
+					
 						</div>
 					</div>
 				</div>				
@@ -307,77 +308,87 @@
 		</div>
 	</section><!--/#sponsor-->
 
-	<section id="contact">
+	<section >
 		<div id="map">
 			<div id="gmap-wrap">
 	 			<div id="gmap"> 				
 	 			</div>	 			
 	    	</div>
 		</div><!--/#map-->
-		<div class="contact-section">
+		<div class="contact-section" id="contact">
 			<div class="ear-piece">
 				<img class="img-responsive" src="images/ear-piece.png" alt="">
 			</div>
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-3 col-sm-offset-4">
-						<div class="contact-text">
+						<div class="contact-text" style="padding-left:15px">
 							<h3>Contact</h3>
 							<address>
-								E-mail: conversatic@gmail.com<br>
-								Phone: +57  312....<br>
+							<i class="fa fa-envelope"></i> conversatic@gmail.com<br>
 							</address>
 						</div>
-						<div class="contact-address">
+						<div class="contact-address" style="padding-left:15px">
 							<h3>Contact</h3>
 							<address>
-								Julian Salinas<br>
-								Fusagasuga ,Colombia
+				 			<i class="fa fa-envelope"></i> julian23salinas@gmail.com<br>
+			            	<i class="fa fa-twitter"></i> @julsal23<br>
+						    <i class="fa fa-skype"></i>  julian.salinas23<br>
+							<i class="fa fa-phone"></i> (301) 770-4114<br>
+							<i class="fa fa-map-marker"></i> Fusagasuga ,Colombia
 							</address>
 						</div>
 					</div>
-				<div class="col-sm-5">
+				<div class="col-sm-5"  id="form-fond">
 						<div id="contact-section">
 							<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
-							<h2>Usuarios Inscritos: </h2> <h1>{{ $numeroRegistrados }}</h1>
 							<form method="POST" action="/registro" accept-charset="UTF-8">
-							<input name="_token" type="hidden" value="{{ csrf_token() }}">	
+							<input name="_token" type="hidden" value="{{ csrf_token() }}">
+							<h1>Registro Conversa TIC</h1> 	
+
+							<h3><span class="registrados">Registrados  </span><span class="num-registrados">{{ $numeroRegistrados }}</span></h3> 
+
+					
+
 						<div class="form-group">
 								<label for="name">Ingresa tu nombre</label>
 								<input class="form-control" name="name" type="text" required>
 						</div>
 						<div class="form-group">
 						<label for="email">Ingresa tu email</label>
-								<input class="form-control" name="email" type="text" required>
+								<input class="form-control" name="email" type="text" required placeholder="example@example.com">
 						</div>
 						<div class="form-group">
 								<label for="edad">Ingresa tu edad</label>
-<select name="edad" class="form-control" required>
-  <option value="10a20">Mayor a 10 y menor a 20 </option>
-  <option value="20a30">Mayor a 20 y menor a 30 </option>
-  <option value="30a40">Mayor a 30 y menor a 40 </option>
-  <option value="40aINF">Mayor a 40 años</option>
-</select>
+						<select name="edad" class="form-control" required>
+						 <option selected  value="" disabled>Selección una opción </option>
+						  <option value="10a20">Mayor a 10 y menor a 20 </option>
+						  <option value="20a30">Mayor a 20 y menor a 30 </option>
+						  <option value="30a40">Mayor a 30 y menor a 40 </option>
+						  <option value="40aINF">Mayor a 40 años</option>
+						</select>
 						</div>
 						<div class="form-group">
 								<label for="rol">Ingresa tu rol</label>
-<select name="rol" class="form-control" required>
-  <option value="Estudiante">Estudiante </option>
-  <option value="Empresario">Empresario</option>
-  <option value="Publico">Servidor publico </option>
-  <option value="General">Comunidad en general</option>
-</select>
+						<select name="rol" class="form-control" required>
+						 <option selected value="" disabled>Selección una opción </option>
+						  <option value="Estudiante">Estudiante </option>
+						  <option value="Empresario">Empresario</option>
+						  <option value="Publico">Servidor publico </option>
+						  <option value="General">Comunidad en general</option>
+						</select>
 
 
 			
 						</div>
 						<div class="form-group">
 								<label for="genero">Ingresa tu genero</label>
-								<select name="genero" class="form-control" required>
-  <option value="M">Masculino </option>
-  <option value="F">Femenino</option>
-  <option value="O">Otro </option>
-</select>
+						<select name="genero" class="form-control" required>
+						 <option selected  value="" disabled>Selección una opción </option>
+						  <option value="M">Masculino </option>
+						  <option value="F">Femenino</option>
+						  <option value="O">Otro </option>
+						</select>
 						</div>
 						<div class="form-group">
 								<label for="ubicacion">Ingresa desde que sitio vienes</label>
@@ -385,14 +396,14 @@
 						</div>
 						<div class="form-group">
 								<label for="twitter">Ingresa tu pagina de twitter</label>
-								<input class="form-control" name="twitter" type="text" required>
+								<input class="form-control" name="twitter" type="text" required placeholder="@example">
 						</div>
 						<div class="form-group">
 								<label for="twitter">Ingresa tu telefono</label>
 								<input class="form-control" name="telefono" type="text" required>
 						</div>
 						<input class="form-contro btn btn-primary" name="registro" value="Registrar" type="submit" required >
-						<br>
+						
 						</form>
 	</div>
 					    </div>
@@ -415,30 +426,30 @@
 
 	#content
 	{
-		color: black;
+		     color: black;
 	}
 
 	.text-con
 	{
 									
-	    text-align: center;
-	    color:#bdc3c7;
+	        text-align: center;
+	        color:#bdc3c7;
 	}
 
 	#event
 	{
-	    background-image: url("../images/twitter-bg.jpg");
+	        background-image: url("../images/twitter-bg.jpg");
 	}
 
 	#event-carousel .title-head
 	{
-		color: black;
+		    color: black;
 	}
 								
 	.img-twi
 	{
 			position: absolute;
-			z-index: 66666;
+			z-index: 300;
 	}
 
 	.img-twi2
@@ -450,6 +461,34 @@
 			top:90px;
 	}
 
+	.a-show{
+			color: black;
+			font-size: 25px;
+			}
+    .color-link{
+ 	        color: #163119;
+    }
+    .free{
+    	background-color: #D35400;
+    	padding:5px;
+    
+    }
+    #main-slider .carousel-caption .free > a{
+    	color: #2ECC71;
+    	font-size: 25px;
+    }
+    .registrados{
+		background-color: #212020;
+		padding: 5px; 
+		color:white;
+			    }
+	.num-registrados{
+		background-color: #d35400;
+	    padding: 5px; 
+		padding-right: 15px;
+		padding-left: 15px;
+		color:white;
+					}
 </style>
 
     <script type="text/javascript" src="js/jquery.js"></script>
@@ -463,5 +502,8 @@
     <script type="text/javascript" src="js/jquery.scrollTo.js"></script>
     <script type="text/javascript" src="js/jquery.nav.js"></script>
     <script type="text/javascript" src="js/main.js"></script>  
+    <script type="text/javascript">
+	$(document).ready(function() {if ( $("#msg") ) {$("#msg").delay(2000).fadeOut("slow");}});
+</script>
 </body>
 </html>
