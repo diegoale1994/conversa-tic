@@ -4,13 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-<meta property="og:url"                content="http://conversa-tic.audiplantas.com/" />
-<meta property="og:type"               content="Conversa TIC" />
-<meta property="og:title"              content="Conversa TIC" />
-<meta property="og:description"        content="Un dia de inspiracion para pensar y actuar en grande" />
+	<meta property="og:url"                content="http://conversa-tic.audiplantas.com/" />
+	<meta property="og:type"               content="Conversa TIC" />
+	<meta property="og:title"              content="Conversa TIC Fusagasuga" />
+	<meta property="og:description"        content="Un dia de inspiracion para pensar y actuar en grande" />
 
 
     <title>ConversaTic</title>
+
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
@@ -29,7 +30,7 @@
 						<a target="_blank" href="https://twitter.com/ConversaTICFusa"><i class="fa fa-twitter"></i></a>
 						<a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
 						<a target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
-						<a target="_blank" href="#"><i class="fa fa-youtube"></i></a>
+						<a target="_blank" href="https://www.youtube.com/channel/UCXlBQ_3DJ3LRgpKYhdx-A_g"><i class="fa fa-youtube"></i></a>
 					</div>
 				</div>     
 		        <div class="row">	        		
@@ -51,7 +52,8 @@
 		                    <li class="scroll"><a href="#event">SPEAKERS</a></li>
 		                    <li class="scroll"><a href="#about">About</a></li>                     
 		                    <li class="no-scroll"><a href="#twitter">Twitter</a></li>
-		                    <li><a class="no-scroll" href="#" target="_blank">PURCHASE TICKETS</a></li>
+		                    <li class="no-scroll"><a href="#streaming">streaming</a></li>
+		                   <!-- <li><a class="no-scroll" href="#" target="_blank">PURCHASE TICKETS</a></li> -->
 		                    <li class="scroll"><a href="#contact">Contact</a></li>       
 		                </ul>
 		            </div>
@@ -72,25 +74,25 @@
 				<div class="item active">
 					<img class="img-responsive" src="images/slider/bg1.jpg" alt="slider">						
 					<div class="carousel-caption">
-						<h2>register for our next event </h2>
-						<h4>full event package only @$199</h4>
-						<a href="#contact">GRAB YOUR TICKETS <i class="fa fa-angle-right"></i></a>
+						<h2>Conversa TIC <strong>Fusagasuga</strong> </h2>
+						<h4>Un dia de inspiracion para pensar y actuar en grande</h4>
+						<a target="_blank" href="https://twitter.com/ConversaTICFusa">@ConversaTICFusa <!--<i class="fa fa-angle-right"></i> --></a> 
 					</div>
 				</div>
 				<div class="item">
 					<img class="img-responsive" src="images/slider/bg2.jpg" alt="slider">	
 					<div class="carousel-caption">
-						<h2>register for our next event </h2>
-						<h4>full event package only @$199</h4>
-						<a href="#contact">GRAB YOUR TICKETS <i class="fa fa-angle-right"></i></a>
+						<h2>Conversa TIC <strong>Fusagasuga</strong> </h2>
+						<h4>Un dia de inspiracion para pensar y actuar en grande</h4>
+						<a target="_blank" href="https://twitter.com/ConversaTICFusa">@ConversaTICFusa <!--<i class="fa fa-angle-right"></i> --></a> 
 					</div>
 				</div>
 				<div class="item">
 					<img class="img-responsive" src="images/slider/bg3.jpg" alt="slider">	
 					<div class="carousel-caption">
-						<h2>register for our next event </h2>
-						<h4>full event package only @$199</h4>
-						<a href="#contact" >GRAB YOUR TICKETS <i class="fa fa-angle-right"></i></a>
+						<h2>Conversa TIC <strong>Fusagasuga</strong> </h2>
+						<h4>Un dia de inspiracion para pensar y actuar en grande</h4>
+						<a target="_blank" href="https://twitter.com/ConversaTICFusa">@ConversaTICFusa <!--<i class="fa fa-angle-right"></i> --></a> 
 					</div>
 				</div>				
 			</div>
@@ -105,7 +107,7 @@
 					<img class="img-responsive" src="images/watch.png" alt="">
 				</div>				
 				<div class="col-md-4 col-md-offset-2 col-sm-5">
-					<h2>Nuestro evento en:</h2>
+					<h2>Conversa TIC en:</h2>
 				</div>				
 				<div class="col-sm-7 col-md-6">					
 					<ul id="countdown">
@@ -128,16 +130,16 @@
 					</ul>
 				</div>
 			</div>
-			<div class="cart">
+		<!--	<div class="cart">
 				<a href="#"><i class="fa fa-shopping-cart"></i> <span>Purchase Tickets</span></a>
-			</div>
+			</div> -->
 		</div>
 	</section><!--/#explore-->
 
 	<section id="event">
 		<div class="container">
 			<div class="row">
-				<div class="col-sm-12 col-md-9">
+				<div class="col-sm-9 col-md-9">
 					<div id="event-carousel" class="carousel slide" data-interval="false">
 						<h2 class="heading title-head">SPEAKERS</h2>
 						<a class="even-control-left" href="#event-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
@@ -145,13 +147,13 @@
 						<div class="carousel-inner">
 							<div class="item active">
 								<div class="row">
-									<div class="col-sm-4">
+									<div class="col-sm-3">
 										<div class="single-event">
 											<center><img class="img-responsive img-circle" src="images/event/event1.jpg" alt="event-image"></center>
 											<div class="text-con">
 												<h4>Nelson Enrique Molano Sanchez</h4>
 											<h5>Coordinador Nacional Redvolución en Ministerio de Tecnologías de la Información y las Comunicaciones</h5>
-											<a href="https://www.linkedin.com/in/nmolano">
+											<a target="_blank" href="https://www.linkedin.com/in/nmolano">
 
 											<font color="red">Ver perfil Completo</font>
 											<img  WIDTH=70 HEIGHT=70 src="images/link.png" alt="event-image">
@@ -159,64 +161,50 @@
 											</div>
 										</div>
 									</div>
-									<div class="col-sm-4">
+									<div class="col-sm-3">
 										<div class="single-event">
 											<center><img class="img-responsive img-circle" src="images/event/event2.jpg" alt="event-image"></center>
 											<div class="text-con">
 											<h4>Edwin Zácipa</h4>
 											<h5>International Business Manager innovating in fintech ventures</h5>
-											<a href="https://www.linkedin.com/in/fejzn"><font color="red">Ver perfil Completo</font><img  WIDTH=70 HEIGHT=70 src="images/link.png" alt="event-image"></a>
+											<a target="_blank" href="https://www.linkedin.com/in/fejzn"><font color="red">Ver perfil Completo</font><img  WIDTH=70 HEIGHT=70 src="images/link.png" alt="event-image"></a>
 											
 											</div>
 										</div>
 									</div>
-									<div class="col-sm-4">
+									<div class="col-sm-3">
 										<div class="single-event">
 											<center><img class="img-responsive img-circle" src="images/event/event3.jpg" alt="event-image"></center>
 											<div class="text-con">
 											<h4>Julián R. Figueroa</h4>
 											<h5>CTO @ Zentrífuga</h5>
-											<a href="https://www.linkedin.com/in/julianrfigueroa"><font color="red">Ver perfil Completo</font><img  WIDTH=70 HEIGHT=70 src="images/link.png" alt="event-image"></a>
+											<a target="_blank" href="https://www.linkedin.com/in/julianrfigueroa"><font color="red">Ver perfil Completo</font><img  WIDTH=70 HEIGHT=70 src="images/link.png" alt="event-image"></a>
 											
 											</div>
 										</div>
 									</div>
+
+										<div class="col-sm-3">
+										<div class="single-event">
+											<center><img class="img-responsive img-circle" src="images/event/Jairo.jpg" alt="event-image"></center>
+											<div class="text-con">
+											<h4>Jairo Alonso García Hurtado</h4>
+											<h5></h5>
+											<a target="_blank" href="https://www.linkedin.com/in/"><font color="red" >Ver perfil Completo</font><img  WIDTH=70 HEIGHT=70 src="images/link.png" alt="event-image"></a>
+											
+											</div>
+										</div>
+									</div>
+
 								</div>
 							</div>
 
-						
-
-							<div class="item">
-								<div class="row">
-									<div class="col-sm-4">
-										<div class="single-event">
-											<img class="img-responsive" src="images/event/event1.jpg" alt="event-image">
-											<h4>Chester Bennington</h4>
-											<h5>Vocal</h5>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="single-event">
-											<img class="img-responsive" src="images/event/event2.jpg" alt="event-image">
-											<h4>Mike Shinoda</h4>
-											<h5>vocals, rhythm guitar</h5>
-										</div>
-									</div>
-									<div class="col-sm-4">
-										<div class="single-event">
-											<img class="img-responsive" src="images/event/event3.jpg" alt="event-image">
-											<h4>Rob Bourdon</h4>
-											<h5>drums</h5>
-										</div>
-									</div>
-								</div>
-							</div>
 						</div>
 					</div>
 				</div>
 				<div class="guitar">
 					<img class="img-responsive" src="images/guitar.png" alt="guitar">
-				</div>
+				</div> 
 			</div>			
 		</div>
 	</section><!--/#event-->
@@ -234,35 +222,68 @@
 	</section><!--/#about-->
 	
 	<section id="twitter">
-		<div id="twitter-feed" class="carousel slide" data-interval="false">
-		<center>
-			       <a class="twitter-timeline"  href="https://twitter.com/search?q=%40ConversaTICFusa" data-widget-id="785346546401439744">Tweets sobre @ConversaTICFusa</a>
-            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-          
-          </center>
+		
+		<div class="row">
+		<div class="hidden-sm hidden-xs">
+			<img src="/images/twit.png" class="img-twi ">
+		</div>
+			<div id="twitter-feed" class="carousel slide" data-interval="false">
+			<center>
+				       <a class="twitter-timeline"  href="https://twitter.com/search?q=%40ConversaTICFusa" data-widget-id="785346546401439744">Tweets sobre @ConversaTICFusa</a>
+	            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+	          
+	          </center>
+			</div>
+
+		<div class="hidden-sm hidden-xs">
+			<img src="/images/twit2.png" class="img-twi2 ">
+		</div>
+
 		</div>		
 	</section><!--/#twitter-feed-->
+
+
+    	<section id="streaming">
+		
+		<div class="row">
 	
+
+		</div>		
+	</section><!--/#twitter-feed-->
+
+
+
 	<section id="sponsor">
 		<div id="sponsor-carousel" class="carousel slide" data-interval="false">
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-10">
 						<h2>PARTNERS</h2>			
-						<a class="sponsor-control-left" href="#sponsor-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
-						<a class="sponsor-control-right" href="#sponsor-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>
+					<!--	<a class="sponsor-control-left" href="#sponsor-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
+						<a class="sponsor-control-right" href="#sponsor-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a> -->
 						<div class="carousel-inner">
 							<div class="item active">
 								<ul>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor1.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor2.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor3.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor4.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor5.png" alt=""></a></li>
-									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor6.png" alt=""></a></li>
+									<li><center><img class="img-responsive img-circle" src="images/event/Jairo.jpg" alt="event-image"></center>
+                                        <div class="text-con">
+											<h3>Jairo Alonso García Hurtado</h3>
+											<h5><strong>THE EAGLE LABS</strong>, Empresa líder en la prestación de servicios de "Hacking Ético" y "Penetration Test", con soluciones innovadoras enfocadas a verificar los controles de ciberseguridad con los más altos estándares de calidad, generando total confianza en nuestros clientes y nuestra sociedad desde el año 2012, con más de quinientos (500) proyectos asociados a nuestros servicios.
+                                            </h5>
+
+										<h5><a class="a-show" target="_blank" href="http://www.theeaglelabs.com/"><font color="a-show" >http://www.theeaglelabs.com/</font></a></h5>
+											
+											</div>
+									</li>
+								
 								</ul>
+								<style type="text/css">
+									.a-show{
+									 color: black;
+									 font-size: 25px;
+									}
+								</style>
 							</div>
-							<div class="item">
+						<!--	<div class="item">
 								<ul>
 									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor6.png" alt=""></a></li>
 									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor5.png" alt=""></a></li>
@@ -271,7 +292,7 @@
 									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor2.png" alt=""></a></li>
 									<li><a href="#"><img class="img-responsive" src="images/sponsor/sponsor1.png" alt=""></a></li>
 								</ul>
-							</div>
+							</div> -->
 						</div>
 					</div>
 				</div>				
@@ -365,7 +386,8 @@
 								<label for="twitter">Ingresa tu telefono</label>
 								<input class="form-control" name="telefono" type="text" required>
 						</div>
-						<input class="form-control" name="registro" value="Registrar" type="submit" required>
+						<input class="form-contro btn btn-primary" name="registro" value="Registrar" type="submit" required >
+						<br>
 						</form>
 	</div>
 					    </div>
@@ -385,23 +407,44 @@
     </footer>
     <!--/#footer-->
 <style type="text/css">
-	#content{
+
+	#content
+	{
 		color: black;
 	}
-	.text-con{
+
+	.text-con
+	{
 									
 	    text-align: center;
 	    color:#bdc3c7;
 	}
-	.text-con > h4{
-									
-	}
-	#event{
+
+	#event
+	{
 	    background-image: url("../images/twitter-bg.jpg");
-		  }
-	#event-carousel .title-head{
+	}
+
+	#event-carousel .title-head
+	{
 		color: black;
-								}
+	}
+								
+	.img-twi
+	{
+			position: absolute;
+			z-index: 66666;
+	}
+
+	.img-twi2
+	{
+			position: absolute;
+			z-index:344;
+			float:right;
+			right: 0px;
+			top:90px;
+	}
+
 </style>
 
     <script type="text/javascript" src="js/jquery.js"></script>
