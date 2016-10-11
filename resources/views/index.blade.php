@@ -62,7 +62,11 @@
         </div>                    
     </header>
     <!--/#header--> 
-
+@if (Session::has('message'))
+	<div class="alert alert-success">
+  {{ Session::get('message') }}
+</div>
+@endif
     <section id="home">	
 		<div id="main-slider" class="carousel slide" data-ride="carousel">
 			<ol class="carousel-indicators">
@@ -335,6 +339,7 @@
 				<div class="col-sm-5">
 						<div id="contact-section">
 							<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+							<h2>Usuarios Inscritos: </h2> <h1>{{ $numeroRegistrados }}</h1>
 							<form method="POST" action="/registro" accept-charset="UTF-8">
 							<input name="_token" type="hidden" value="{{ csrf_token() }}">	
 						<div class="form-group">

@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use DB;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -17,7 +17,11 @@ class FrontController extends Controller
      */
     public function index()
     {
-       return view('index');
+       
+                $numeroRegistrados = DB::table('users')->count();
+
+                
+      return view('index',compact('numeroRegistrados'));
     }
 
     /**

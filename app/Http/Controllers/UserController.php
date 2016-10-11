@@ -40,7 +40,9 @@ class UserController extends Controller
      */
     public function store(Request $request)
     {
-        User::create([
+$mensaje = "Registro Exitoso! ";
+     try { 
+  User::create([
         'name' => $request['name'],
         'email' => $request['email'],
         'edad' => $request['edad'],
@@ -50,10 +52,14 @@ class UserController extends Controller
         'twitter' => $request['twitter'],
         'telefono' => $request['telefono']
 ]);
+} catch(\Illuminate\Database\QueryException $ex){ 
+  $mensaje = "Este correo ya se encuentra Registrado !! ";
+}   
+        
 
         $numeroRegistrados = DB::table('users')->count();
 
-    return redirect('/')->with('numeroRegistrados',$numeroRegistrados);
+    return redirect('/')->with(compact('numeroRegistrados'))->with('message',$mensaje);
     }
 
     /**
