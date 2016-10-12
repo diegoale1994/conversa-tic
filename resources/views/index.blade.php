@@ -24,7 +24,7 @@
 @if (Session::has('message'))
 
 @if (Session::get('message') != 'Registro Exitoso! ' )
-    <div class="alert alert-danger" id="msg" style="margin-bottom: 0px ; background-color:#C34C39; color:#800818; border:1px solid #C34C39; border-radius:0px;">
+    <div class="alert alert-danger exito-mensage" id="msg" >
 	  {{ Session::get('message') }}
 	</div>
 @endif
@@ -35,7 +35,7 @@
 @if (Session::has('message'))
 
 @if (Session::get('message') == 'Registro Exitoso! ' )
-    <div class="alert alert-success" id="msg" style="margin-bottom: 0px; background-color:#75B46E; color:green; border:1px solid #75B46E; border-radius:0px; ">
+    <div class="alert alert-success error-mensage" id="msg" style="">
 	  {{ Session::get('message') }}
 	</div>
 @endif
@@ -68,14 +68,15 @@
 		            </div>
 		            <div class="collapse navbar-collapse">
 		                <ul class="nav navbar-nav navbar-right">                 
-		                    <li class="scroll active"><a href="#home">Home</a></li>
-		                    <li class="scroll"><a href="#explore">Explore</a></li>                         
-		                    <li class="scroll"><a href="#event">SPEAKERS</a></li>
-		                    <li class="scroll"><a href="#about">About</a></li>                     
+		                    <li class="scroll active"><a href="#home">Inicio</a></li>
+		                    <!--<li class="scroll"><a href="#explore">Explorar</a></li> -->                     
+		                    <li class="scroll"><a href="#event">Ponentes</a></li>
+		                    <li class="scroll"><a href="#about">Nosotros</a></li>                     
 		                    <li class="no-scroll"><a href="#twitter">Twitter</a></li>
-		                    <li class="no-scroll"><a href="#streaming">streaming</a></li>
+		                    <li class="no-scroll"><a href="#sponsor">Patrociandores</a></li>
+		                    <!--  <li class="no-scroll"><a href="#streaming">streaming</a></li> -->
 		                   <!-- <li><a class="no-scroll" href="#" target="_blank">PURCHASE TICKETS</a></li> -->
-		                    <li class="scroll"><a href="#contact">Contact</a></li>       
+		                    <li class="scroll"><a href="#contact">Contacto</a></li>       
 		                </ul>
 		            </div>
 		        </div>
@@ -95,7 +96,7 @@
 				<div class="item active">
 					<img class="img-responsive" src="images/slider/bg1.jpg" alt="slider">						
 					<div class="carousel-caption">
-						<h2>Conversa TIC <strong>Fusagasuga</strong> </h2>
+						<h2>1° Conversa TIC <strong>Fusagasuga</strong> </h2>
 						<h4>Un dia de inspiracion para pensar y actuar en grande</h4>
 						<h4 class="free"><a href="#contact">Registrate </a>Entrada libre !</h4>
 						<a target="_blank" href="https://twitter.com/ConversaTICFusa">@ConversaTICFusa <!--<i class="fa fa-angle-right"></i> --></a> 
@@ -104,7 +105,7 @@
 				<div class="item">
 					<img class="img-responsive" src="images/slider/bg2.jpg" alt="slider">						
 					<div class="carousel-caption">
-						<h2>Conversa TIC <strong>Fusagasuga</strong> </h2>
+						<h2>1° Conversa TIC <strong>Fusagasuga</strong> </h2>
 						<h4>Un dia de inspiracion para pensar y actuar en grande</h4>
 						<h4 class="free"><a href="#contact">Registrate </a>Entrada libre !</h4>
 						<a target="_blank" href="https://twitter.com/ConversaTICFusa">@ConversaTICFusa <!--<i class="fa fa-angle-right"></i> --></a> 
@@ -113,7 +114,7 @@
 				<div class="item">
 					<img class="img-responsive" src="images/slider/bg3.jpg" alt="slider">						
 					<div class="carousel-caption">
-						<h2>Conversa TIC <strong>Fusagasuga</strong> </h2>
+						<h2>1° Conversa TIC <strong>Fusagasuga</strong> </h2>
 						<h4>Un dia de inspiracion para pensar y actuar en grande</h4>
 						<h4 class="free"><a href="#contact">Registrate </a>Entrada libre !</h4>
 						<a target="_blank" href="https://twitter.com/ConversaTICFusa">@ConversaTICFusa <!--<i class="fa fa-angle-right"></i> --></a> 
@@ -131,7 +132,7 @@
 					<img class="img-responsive" src="images/watch.png" alt="">
 				</div>				
 				<div class="col-md-4 col-md-offset-2 col-sm-5">
-					<h2>Conversa TIC en:</h2>
+					<h2>1° Conversa TIC en:</h2>
 				</div>				
 				<div class="col-sm-7 col-md-6">					
 					<ul id="countdown">
@@ -165,7 +166,7 @@
 			<div class="row">
 				<div class="col-sm-12 col-md-12">
 					<div id="event-carousel" class="carousel slide" data-interval="false">
-						<h2 class="heading title-head">SPEAKERS</h2>
+						<h2 class="heading title-head">PONENTES</h2>
 					<!--	<a class="even-control-left" href="#event-carousel" data-slide="prev"><i class="fa fa-angle-left"></i></a>
 						<a class="even-control-right" href="#event-carousel" data-slide="next"><i class="fa fa-angle-right"></i></a>-->
 						<div class="carousel-inner">
@@ -230,45 +231,51 @@
 						</div>
 					</div>
 				</div>
-				<!-- <div class="guitar">
-					<img class="img-responsive" src="images/guitar.png" alt="guitar">
-				</div> --> 
+			
+
 			</div>			
 		</div>
 	</section><!--/#event-->
 
 	<section id="about">
-		<div class="guitar2">				
-			<img class="img-responsive" src="images/guitar2.jpg" alt="guitar">
+		<div class="guitar2 about-content conten-img" >				
+			<img class="img-responsive" src="images/estudiantes-gobierno-digital-udec.jpg" alt="guitar" class="img-udec">
 		</div>
 		<div class="about-content">					
 					<h2>Conversa TIC</h2>
-					<p style='text-align: justify;'>Somos estudiantes de universidad de Cundinamarca buscando un encuentro informal con emprendedores de la región de Sumapaz, mediante la invitación a tomarse una Pola generaremos proyectos en el ámbito social, económico y ambiental.</p>
+					<p style='text-align: justify;'>Somos un grupo de emprendedores de la  Universidad de Cundinamarca buscando un encuentro informal con emprendedores de la región de Sumapaz, mediante la invitación a tomarse una Pola generaremos proyectos en el ámbito social, económico y ambiental.</p>
 				<!---	<a href="#" class="btn btn-primary">View Date & Place <i class="fa fa-angle-right"></i></a> -->
 				
 		</div>
 	</section><!--/#about-->
 	
 	<section id="twitter">
-		
+		<div class="container">
+			
+	
 		<div class="row">
-		<div class="hidden-sm hidden-xs">
-			<img src="/images/twit.png" class="img-twi ">
-		</div>
-			<div id="twitter-feed" class="carousel slide" data-interval="false">
-			<center>
-				       <a class="twitter-timeline"  href="https://twitter.com/search?q=%40ConversaTICFusa" data-widget-id="785346546401439744">Tweets sobre @ConversaTICFusa</a>
-	            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-	          
-	          </center>
-			</div>
+	
+				   <div class="col-sm-8">
+				   	
+				   </div>
+				   <div class="col-sm-4">
+				   <a class="twitter-timeline" data-height="350" href="https://twitter.com/ConversaTICFusa">Tweets by ConversaTICFusa</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+          
+          
 
-		<div class="hidden-sm hidden-xs">
-			<img src="/images/twit2.png" class="img-twi2 ">
-		</div>
+				   </div>
+				   <div class="hidden-sm hidden-xs">
+			         <img width="30" height="30" src="/images/twit2.png" class="img-twi2 " style="top:120px;">
+		           </div>
+		  
 
-		</div>		
+		</div>
+		</div>
 	</section><!--/#twitter-feed-->
+
+
+
+
 
 
     	<section id="streaming">
@@ -284,17 +291,41 @@
 	<section id="sponsor">
 		<div id="sponsor-carousel" class="carousel slide" data-interval="false">
 			<div class="container">
+			<h2>PATROCINADORES</h2>
 				<div class="row">
-					<div class="col-sm-6">
-						<h2>PARTNERS</h2>			
+					<div class="col-xs-6 col-md-3 col-sm-3 col-lg-3">
+									
 				
-									<center><img class="img-responsive img-circle" src="images/EagleLabs.png" alt="event-image"></center>
+									<center><h5><a class="a-show" target="_blank" href="http://www.theeaglelabs.com/">
+
+										<img class="img-responsive " src="images/EagleLabs.png" alt="event-image">
+
+										</a></h5></center>
                                         <div class="text-con">
 											<h3><strong>THE EAGLE LABS</strong></h3>
 											<h5> Empresa líder en la prestación de servicios de "Hacking Ético" y "Penetration Test", con soluciones innovadoras enfocadas a verificar los controles de ciberseguridad con los más altos estándares de calidad, generando total confianza en nuestros clientes y nuestra sociedad desde el año 2012, con más de quinientos (500) proyectos asociados a nuestros servicios.
                                             </h5>
 
-										<h5><a class="a-show" target="_blank" href="http://www.theeaglelabs.com/"><font color="a-show" >http://www.theeaglelabs.com/</font></a></h5>
+                                              <br>
+											
+										</div>
+					
+						</div>
+						<div class="col-xs-6 col-md-3 col-sm-3 col-lg-3">
+							
+				
+									<center>	<h5><a class="a-show" target="_blank" href="http://www.mintic.gov.co/">
+                                            <img class="img-responsive " src="images/mintic.png" alt="event-image">
+										</a></h5></center>
+										<br>
+										<center>	<h5><a class="a-show" target="_blank" href="http://www.mintic.gov.co/">
+                                            <img class="img-responsive " src="images/gente.png" alt="event-image">
+										</a></h5></center>
+                                        <div class="text-con">
+											<h3><strong></strong></h3>
+											<h5>  </h5>
+
+									
 											
 										</div>
 					
@@ -322,15 +353,10 @@
 			<div class="container">
 				<div class="row">
 					<div class="col-sm-3 col-sm-offset-4">
-						<div class="contact-text" style="padding-left:15px">
-							<h3>Contact</h3>
+						<div class="contact-address" style="padding-left:15px">
+							<h3>Contacto</h3>
 							<address>
 							<i class="fa fa-envelope"></i> conversatic@gmail.com<br>
-							</address>
-						</div>
-						<div class="contact-address" style="padding-left:15px">
-							<h3>Contact</h3>
-							<address>
 				 			<i class="fa fa-envelope"></i> julian23salinas@gmail.com<br>
 			            	<i class="fa fa-twitter"></i> @julsal23<br>
 						    <i class="fa fa-skype"></i>  julian.salinas23<br>
@@ -346,7 +372,7 @@
 							<input name="_token" type="hidden" value="{{ csrf_token() }}">
 							<h1>Registro Conversa TIC</h1> 	
 
-							<h3><span class="registrados">Registrados  </span><span class="num-registrados">{{ 50+$numeroRegistrados }}</span></h3> 
+						<h3><span class="registrados">Registrados  </span><span class="num-registrados">{{ 50+$numeroRegistrados }}</span></h3> 
 
 					
 
@@ -356,7 +382,7 @@
 						</div>
 						<div class="form-group">
 						<label for="email">Ingresa tu email</label>
-								<input class="form-control" name="email" type="text" required placeholder="example@example.com">
+								<input class="form-control" name="email" type="email" required placeholder="example@example.com">
 						</div>
 						<div class="form-group">
 								<label for="edad">Ingresa tu edad</label>
@@ -489,6 +515,29 @@
 		padding-left: 15px;
 		color:white;
 					}
+    
+
+		#main-slider .carousel-caption 
+		{
+			bottom: 25%;
+			left: initial;
+			right: 0px;
+		}
+	
+	.img-udec{
+		margin-left: 30px;
+	}
+
+	.conten-img{
+		padding: 100px 100px 110px; margin-left: 40px;
+	}
+
+	.exito-mensage{
+		margin-bottom: 0px ; background-color:#C34C39; color:#800818; border:1px solid #C34C39; border-radius:0px;
+	}
+	.error-mensage{
+		margin-bottom: 0px; background-color:#75B46E; color:green; border:1px solid #75B46E; border-radius:0px; 
+	}
 </style>
 
     <script type="text/javascript" src="js/jquery.js"></script>
