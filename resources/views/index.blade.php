@@ -96,7 +96,7 @@
 				<div class="item active">
 					<img class="img-responsive" src="images/slider/bg1.jpg" alt="slider">						
 					<div class="carousel-caption">
-						<h2>1° Conversa TIC <strong>Fusagasuga</strong> </h2>
+						<h2>1<span style="text-transform: capitalize;">er</span>   Conversa TIC <strong>Fusagasuga</strong> </h2>
 						<h4>Un dia de inspiracion para pensar y actuar en grande</h4>
 						<h4 class="free"><a href="#contact">Registrate </a>Entrada libre !</h4>
 						<a target="_blank" href="https://twitter.com/ConversaTICFusa">@ConversaTICFusa <!--<i class="fa fa-angle-right"></i> --></a> 
@@ -105,7 +105,7 @@
 				<div class="item">
 					<img class="img-responsive" src="images/slider/bg2.jpg" alt="slider">						
 					<div class="carousel-caption">
-						<h2>1° Conversa TIC <strong>Fusagasuga</strong> </h2>
+						<h2>1<span style="text-transform: capitalize;">er</span>   Conversa TIC <strong>Fusagasuga</strong> </h2>
 						<h4>Un dia de inspiracion para pensar y actuar en grande</h4>
 						<h4 class="free"><a href="#contact">Registrate </a>Entrada libre !</h4>
 						<a target="_blank" href="https://twitter.com/ConversaTICFusa">@ConversaTICFusa <!--<i class="fa fa-angle-right"></i> --></a> 
@@ -114,7 +114,7 @@
 				<div class="item">
 					<img class="img-responsive" src="images/slider/bg3.jpg" alt="slider">						
 					<div class="carousel-caption">
-						<h2>1° Conversa TIC <strong>Fusagasuga</strong> </h2>
+						<h2>1<span style="text-transform: capitalize;">er</span>   Conversa TIC <strong>Fusagasuga</strong> </h2>
 						<h4>Un dia de inspiracion para pensar y actuar en grande</h4>
 						<h4 class="free"><a href="#contact">Registrate </a>Entrada libre !</h4>
 						<a target="_blank" href="https://twitter.com/ConversaTICFusa">@ConversaTICFusa <!--<i class="fa fa-angle-right"></i> --></a> 
@@ -132,7 +132,7 @@
 					<img class="img-responsive" src="images/watch.png" alt="">
 				</div>				
 				<div class="col-md-4 col-md-offset-2 col-sm-5">
-					<h2>1° Conversa TIC en:</h2>
+					<h2> 1<span style="text-transform: capitalize;">er</span> Conversa TIC en:</h2>
 				</div>				
 				<div class="col-sm-7 col-md-6">					
 					<ul id="countdown">
@@ -372,9 +372,7 @@
 							<input name="_token" type="hidden" value="{{ csrf_token() }}">
 							<h1>Registro Conversa TIC</h1> 	
 
-						<h3><span class="registrados">Registrados  </span><span class="num-registrados">{{ 50+$numeroRegistrados }}</span></h3> 
-
-					
+					<h3><span class="registrados">Registrados  </span><span class="num-registrados">{{ 50+$numeroRegistrados }}</span></h3> 
 
 						<div class="form-group">
 								<label for="name">Ingresa tu nombre</label>
