@@ -242,8 +242,8 @@
 			<img class="img-responsive" src="images/estudiantes-gobierno-digital-udec.jpg" alt="guitar" class="img-udec">
 		</div>
 		<div class="about-content">					
-					<h2>Conversa TIC</h2>
-					<p style='text-align: justify;'>Somos un grupo de emprendedores de la  Universidad de Cundinamarca buscando un encuentro informal con emprendedores de la región de Sumapaz, mediante la invitación a tomarse una Pola generaremos proyectos en el ámbito social, económico y ambiental.</p>
+					<h1>Conversa TIC</h1>
+					<h2><p style='text-align: justify;'>Somos un grupo de emprendedores de la  Universidad de Cundinamarca buscando un encuentro informal con emprendedores de la región de Sumapaz, mediante la invitación a tomarse una Pola generaremos proyectos en el ámbito social, económico y ambiental.</p></h2>
 				<!---	<a href="#" class="btn btn-primary">View Date & Place <i class="fa fa-angle-right"></i></a> -->
 				
 		</div>
@@ -254,9 +254,10 @@
 			
 	
 		<div class="row">
-	
+
 				   <div class="col-sm-8">
-				   	
+				  
+				   	<iframe width="560" height="315" src="https://www.youtube.com/embed/o37jl_n6zOk" frameborder="0" allowfullscreen></iframe>
 				   </div>
 				   <div class="col-sm-4">
 				   <a class="twitter-timeline" data-height="350" href="https://twitter.com/ConversaTICFusa">Tweets by ConversaTICFusa</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -317,7 +318,7 @@
 									<center>	<h5><a class="a-show" target="_blank" href="http://www.mintic.gov.co/">
                                             <img class="img-responsive " src="images/mintic.png" alt="event-image">
 										</a></h5></center>
-										<br>
+								
 										<center>	<h5><a class="a-show" target="_blank" href="http://www.mintic.gov.co/">
                                             <img class="img-responsive " src="images/gente.png" alt="event-image">
 										</a></h5></center>
@@ -368,9 +369,10 @@
 				<div class="col-sm-5"  id="form-fond">
 						<div id="contact-section">
 							<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
+							<h1>Registro Conversa TIC <strong>Fusagasuga</strong></h1>
 							<form method="POST" action="/registro" accept-charset="UTF-8">
 							<input name="_token" type="hidden" value="{{ csrf_token() }}">
-							<h1>Registro Conversa TIC</h1> 	
+							 	
 
 					<h3><span class="registrados">Registrados  </span><span class="num-registrados">{{ 50+$numeroRegistrados }}</span></h3> 
 
@@ -416,7 +418,7 @@
 						</div>
 						<div class="form-group">
 								<label for="ubicacion">Ingresa desde que sitio vienes</label>
-								<input class="form-control" name="ubicacion" type="text" required>
+								<input class="form-control" name="ubicacion" type="text" placeholder="fusagasuga" required>
 						</div>
 						<div class="form-group">
 								<label for="twitter">Ingresa tu pagina de twitter</label>
