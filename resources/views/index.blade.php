@@ -62,8 +62,10 @@
 		                    <span class="icon-bar"></span>
 		                    <span class="icon-bar"></span>
 		                </button>
-		                <a class="navbar-brand" href="index.html">
-		                	<img class="img-responsive" src="images/logo.png" alt="logo">
+		                <a class="navbar-brand">
+
+
+		                	 <img class="img-responsive" src="images/logo.png" alt="logo">
 		                </a>                    
 		            </div>
 		            <div class="collapse navbar-collapse">
@@ -76,7 +78,7 @@
 		                    <li class="no-scroll"><a href="#sponsor">Patrociandores</a></li>
 		                    <!--  <li class="no-scroll"><a href="#streaming">streaming</a></li> -->
 		                   <!-- <li><a class="no-scroll" href="#" target="_blank">PURCHASE TICKETS</a></li> -->
-		                    <li class="scroll"><a href="#contact">Contacto</a></li>       
+		                    <li class="scroll"><a href="#contact">Registro</a></li>       
 		                </ul>
 		            </div>
 		        </div>
@@ -132,7 +134,7 @@
 					<img class="img-responsive" src="images/watch.png" alt="">
 				</div>				
 				<div class="col-md-4 col-md-offset-2 col-sm-5">
-					<h2> 1<span style="text-transform: capitalize;">er</span> Conversa TIC en:</h2>
+					<h2><a href="#contact" style="color:black"> Inscribete !</a>  se agota el tiempo</h2>
 				</div>				
 				<div class="col-sm-7 col-md-6">					
 					<ul id="countdown">
@@ -235,20 +237,8 @@
 
 			</div>			
 		</div>
-	</section><!--/#event-->
 
-	<section id="about">
-		<div class="guitar2 about-content conten-img" >				
-			<img class="img-responsive" src="images/estudiantes-gobierno-digital-udec.jpg" alt="guitar" class="img-udec">
-		</div>
-		<div class="about-content">					
-					<h1>Conversa TIC</h1>
-					<h2><p style='text-align: justify;'>Somos un grupo de emprendedores de la  Universidad de Cundinamarca buscando un encuentro informal con emprendedores de la región de Sumapaz, mediante la invitación a tomarse una Pola generaremos proyectos en el ámbito social, económico y ambiental.</p></h2>
-				<!---	<a href="#" class="btn btn-primary">View Date & Place <i class="fa fa-angle-right"></i></a> -->
-				
-		</div>
-	</section><!--/#about-->
-	
+		
 	<section id="twitter">
 		<div class="container">
 			
@@ -257,7 +247,7 @@
 
 				   <div class="col-sm-8">
 				  
-				   	<iframe width="560" height="315" src="https://www.youtube.com/embed/o37jl_n6zOk" frameborder="0" allowfullscreen></iframe>
+				   <iframe width="640" height="360" src="https://www.youtube.com/embed/DZnxwKUViY4" frameborder="0" allowfullscreen></iframe>
 				   </div>
 				   <div class="col-sm-4">
 				   <a class="twitter-timeline" data-height="350" href="https://twitter.com/ConversaTICFusa">Tweets by ConversaTICFusa</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -272,6 +262,45 @@
 
 		</div>
 		</div>
+	</section><!--/#twitter-feed-->
+
+
+
+
+	<section id="about">
+	<div class="container">
+		<div class="row">
+
+			<div class="col-xs-12 col-md-6 col-sm-6 col-lg-6">
+						<br>
+						<br class="hidden-xs hidden-md hidden-lg">
+					    <br class="hidden-xs hidden-md hidden-lg">
+					    <br class="hidden-xs hidden-md hidden-lg">
+					    <br class="hidden-xs hidden-md hidden-lg">
+			<img class="img-responsive" src="images/estudiantes-gobierno-digital-udec.jpg"  class="img-udec">
+ <br>
+	
+			</div>
+	
+			<div class="col-xs-12 col-md-6 col-sm-6 col-lg-6">
+						
+					<br class="hidden-xs">
+					<br class="hidden-xs">
+					<br class="hidden-xs">
+					<br class="hidden-xs">
+					<i class="frase"><i style='font-size: 22px;'>“Cualquier cosa que la mente pueda concebir y creer, puede ser conseguida”</i style='font-size: 18px;'> Napoleon Hill</i>
+					<br>
+					<br>	
+					<p style='text-align: justify;font-size: 20px;' >Somos un grupo de emprendedores Fusagasugueños, buscamos apropiar el buen desarrollo de las Tecnologías de Información y Comunicación (TIC) en el departamento de Cundinamarca-Colombia , desarrollamos iniciativas digitales de valor ciudadano en el ámbito social, gubernamental, económico y ambiental.</p>
+				
+				<br>
+		         </div>
+			</div>
+		</div>
+	</div>
+	</section><!--/#about-->
+	
+	
 	</section><!--/#twitter-feed-->
 
 
@@ -312,16 +341,35 @@
 										</div>
 					
 						</div>
+<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1">
+</div>
 						<div class="col-xs-6 col-md-3 col-sm-3 col-lg-3">
 							
 				
 									<center>	<h5><a class="a-show" target="_blank" href="http://www.mintic.gov.co/">
-                                            <img class="img-responsive " src="images/mintic.png" alt="event-image">
+                                            <img class="img-responsive " src="images/mintic.png" alt="event-image" 	style="z-index:344;">
 										</a></h5></center>
-								
-										<center>	<h5><a class="a-show" target="_blank" href="http://www.mintic.gov.co/">
-                                            <img class="img-responsive " src="images/gente.png" alt="event-image">
+										<br>
+										<center>
+
+
+									
+
+
+
+	<h5><a class="a-show" target="_blank" href="http://www.mintic.gov.co/">
+                                            <img class="img-responsive " src="images/gente.png" alt="event-image" 	style="z-index:344;">
 										</a></h5></center>
+
+<center>	<h5><a class="a-show" target="_blank" href="http://www.mintic.gov.co/">
+                                            <img class="img-responsive " src="images/red.png" alt="event-image" 	style="z-index:344;">
+										</a></h5></center>
+										<br>
+										<center>
+
+
+
+
                                         <div class="text-con">
 											<h3><strong></strong></h3>
 											<h5>  </h5>
@@ -369,10 +417,9 @@
 				<div class="col-sm-5"  id="form-fond">
 						<div id="contact-section">
 							<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
-							<h1>Registro Conversa TIC <strong>Fusagasuga</strong></h1>
 							<form method="POST" action="/registro" accept-charset="UTF-8">
 							<input name="_token" type="hidden" value="{{ csrf_token() }}">
-							 	
+							<h1>Registro Conversa TIC <strong>Fusagasuga</strong></h1> 	
 
 					<h3><span class="registrados">Registrados  </span><span class="num-registrados">{{ 50+$numeroRegistrados }}</span></h3> 
 
@@ -418,7 +465,7 @@
 						</div>
 						<div class="form-group">
 								<label for="ubicacion">Ingresa desde que sitio vienes</label>
-								<input class="form-control" name="ubicacion" type="text" placeholder="fusagasuga" required>
+								<input class="form-control" name="ubicacion" type="text" required>
 						</div>
 						<div class="form-group">
 								<label for="twitter">Ingresa tu pagina de twitter</label>
@@ -537,6 +584,12 @@
 	}
 	.error-mensage{
 		margin-bottom: 0px; background-color:#75B46E; color:green; border:1px solid #75B46E; border-radius:0px; 
+	}
+	.frase{
+		font-size: 20px;
+	}
+	.somos{
+		font-size: 25px;
 	}
 </style>
 
