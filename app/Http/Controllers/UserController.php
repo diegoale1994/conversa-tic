@@ -19,7 +19,16 @@ class UserController extends Controller
      */
     public function index()
     {
-        //
+$users = DB::table('users')
+                ->orderBy('fecha', 'desc')
+                ->get();
+    
+    $users_count = user::count();
+    $users_count_ubication =DB::select("select ubicacion, count(ubicacion) cantidad from users group by ubicacion");
+    $users_count_age =DB::select("select edad, count(edad) cantidad from users group by edad");
+      $users_count_genre =DB::select("select genero, count(genero) cantidad from users group by genero");
+ $users_count_rol =DB::select("select rol, count(rol) cantidad from users group by rol");
+    return view('users.index',compact('users','users_count','users_count_ubication','users_count_genre','users_count_age','users_count_rol'));
     }
 
     /**
@@ -48,9 +57,10 @@ $mensaje = "Registro Exitoso! ";
         'edad' => $request['edad'],
         'rol' => $request['rol'],
         'genero' => $request['genero'],
-        'ubicacion' => $request['ubicacion'],
+        'ubicacion' => strtolower($request['ubicacion']),
         'twitter' => $request['twitter'],
-        'telefono' => $request['telefono']
+        'telefono' => $request['telefono'],
+        'fecha' => \Carbon\Carbon::today()->toDateString()
 ]);
 } catch(\Illuminate\Database\QueryException $ex){ 
   $mensaje = "Este correo ya se encuentra Registrado !! ";

@@ -22,6 +22,7 @@ class CreateUsersTable extends Migration
             $table->string('ubicacion');
             $table->string('twitter');
             $table->string('telefono');
+            $table->date('fecha');
             $table->timestamps();
         });
     }

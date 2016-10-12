@@ -11,5 +11,5 @@
 |
 */
 Route::get('/',"FrontController@index");
+Route::Resource('users_conversatic_registered',"UserController@index");
 Route::Resource('registro',"UserController");
-

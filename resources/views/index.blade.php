@@ -346,7 +346,7 @@
 							<input name="_token" type="hidden" value="{{ csrf_token() }}">
 							<h1>Registro Conversa TIC</h1> 	
 
-							<h3><span class="registrados">Registrados  </span><span class="num-registrados">{{ $numeroRegistrados }}</span></h3> 
+							<h3><span class="registrados">Registrados  </span><span class="num-registrados">{{ 50+$numeroRegistrados }}</span></h3> 
 
 					
 
