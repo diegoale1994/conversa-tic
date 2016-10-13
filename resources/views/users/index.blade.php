@@ -34,6 +34,7 @@
 	<th>TWITTER</th>
 	<th>TELEFONO</th>
 	<th>FECHA</th>
+	<th>REGISTRO</th>
 </thead>
 @foreach($users as $user)
 <tbody>
@@ -46,12 +47,21 @@
 <th><a target="_blank" href="https://twitter.com/{{ $user -> twitter }}">{{ $user -> twitter }}</a</th>
 <th>{{ $user -> telefono }}</th>
 <th>{{ $user -> fecha }}</th>
+<th>
+@if ($user -> estado == 'N')
+	NO CONFIRMADO
+@else
+	CONFIRMADO
+	@endif
+	</th>
 </tbody>
 @endforeach
 </table>
 
 
-<h3>TOTAL DE REGISTROS: {{ $users_count }}</h3>
+<h3>TOTAL DE PERSONAS: {{ $users_count }}</h3>
+<h3>TOTAL DE PERSONAS NO VERIFICADAS: {{ $users_count_no }}</h3>
+
 </div>
 	</div>
 </div>

@@ -9,6 +9,7 @@ use App\Http\Controllers\Controller;
 use App\User;
 use Redirect;
 use DB;
+use Mail;
 
 class UserController extends Controller
 {
@@ -24,11 +25,12 @@ $users = DB::table('users')
                 ->get();
     
     $users_count = user::count();
+     $users_count_no = DB::table('users')->where('estado', 'N')->count();
     $users_count_ubication =DB::select("select ubicacion, count(ubicacion) cantidad from users group by ubicacion");
     $users_count_age =DB::select("select edad, count(edad) cantidad from users group by edad");
       $users_count_genre =DB::select("select genero, count(genero) cantidad from users group by genero");
  $users_count_rol =DB::select("select rol, count(rol) cantidad from users group by rol");
-    return view('users.index',compact('users','users_count','users_count_ubication','users_count_genre','users_count_age','users_count_rol'));
+    return view('users.index',compact('users','users_count','users_count_ubication','users_count_genre','users_count_age','users_count_rol','users_count_no'));
     }
 
     /**
@@ -49,8 +51,17 @@ $users = DB::table('users')
      */
     public function store(Request $request)
     {
+
 $mensaje = "Registro Exitoso! ";
      try { 
+
+
+ $token = str_random(100);
+        $data['token']= $token;
+        $data['nombre']= $request->name;
+
+
+
   User::create([
         'name' => $request['name'],
         'email' => $request['email'],
@@ -60,8 +71,16 @@ $mensaje = "Registro Exitoso! ";
         'ubicacion' => strtolower($request['ubicacion']),
         'twitter' => $request['twitter'],
         'telefono' => $request['telefono'],
-        'fecha' => \Carbon\Carbon::today()->toDateString()
+        'fecha' => \Carbon\Carbon::today()->toDateString(),
+        'token' => $token,
+        'estado' => 'N'
+
 ]);
+
+  Mail::send('email.plantilla',['data'=>$data],function($msg) use ($request){
+    $msg -> subject('CONFIRMA TU REGISTRO');
+    $msg->to($request->email);
+  });
 } catch(\Illuminate\Database\QueryException $ex){ 
   $mensaje = "Este correo ya se encuentra Registrado !! ";
 }   
@@ -115,5 +134,17 @@ $mensaje = "Registro Exitoso! ";
     public function destroy($id)
     {
         //
+    }
+    public function confirm_user($token){
+
+        $users = DB::table('users')->where('token', '=', $token)->where('estado', '=', 'N')->count();
+        if ($users==1) {
+           DB::table('users')
+            ->where('token', $token)
+            ->update(['estado' => 'A']);
+             return redirect('/')->with('message','FELICIDADES ACABAS DE CONFIRMAR TU REGISTRO');
+        }else{
+             return redirect('/');
+        }
     }
 }

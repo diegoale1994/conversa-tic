@@ -13,3 +13,4 @@
 Route::get('/',"FrontController@index");
 Route::Resource('users_conversatic_registered',"UserController@index");
 Route::Resource('registro',"UserController");
+Route::Resource('user_confirm_event/{token}',"UserController@confirm_user");

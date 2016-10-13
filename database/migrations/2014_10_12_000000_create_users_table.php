@@ -23,6 +23,8 @@ class CreateUsersTable extends Migration
             $table->string('twitter');
             $table->string('telefono');
             $table->date('fecha');
+            $table->string('token',100)->unique();
+            $table->string('estado',1);
             $table->timestamps();
         });
     }
