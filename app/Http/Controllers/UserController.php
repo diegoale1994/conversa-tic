@@ -20,17 +20,38 @@ class UserController extends Controller
      */
     public function index()
     {
-$users = DB::table('users')
+$users = DB::table('users')->Where('rol','<>','Estudiante-UDEC')
+                ->orderBy('fecha', 'desc')
+                ->get();
+$users_grupo = DB::table('users')->Where('rol','=','Estudiante-UDEC')
                 ->orderBy('fecha', 'desc')
                 ->get();
     
-    $users_count = user::count();
-     $users_count_no = DB::table('users')->where('estado', 'N')->count();
-    $users_count_ubication =DB::select("select ubicacion, count(ubicacion) cantidad from users group by ubicacion");
-    $users_count_age =DB::select("select edad, count(edad) cantidad from users group by edad");
-      $users_count_genre =DB::select("select genero, count(genero) cantidad from users group by genero");
- $users_count_rol =DB::select("select rol, count(rol) cantidad from users group by rol");
-    return view('users.index',compact('users','users_count','users_count_ubication','users_count_genre','users_count_age','users_count_rol','users_count_no'));
+    $users_count = DB::table('users')->Where('rol','<>','Estudiante-UDEC')->count();
+    $users_count_no = DB::table('users')->where('estado', 'N')->Where('rol','<>','Estudiante-UDEC')->count();
+    $users_count_ubication =DB::select("select ubicacion, count(ubicacion) cantidad from users WHERE rol <> 'Estudiante-UDEC' group by ubicacion");
+    $users_count_age =DB::select("select edad, count(edad) cantidad from users WHERE rol <> 'Estudiante-UDEC' group by edad");
+    $users_count_genre =DB::select("select genero, count(genero) cantidad from users WHERE rol <> 'Estudiante-UDEC' group by genero");
+    $users_count_rol =DB::select("select rol, count(rol) cantidad from users WHERE rol <> 'Estudiante-UDEC' group by rol");
+
+    $users_count_grupo = DB::table('users')->Where('rol','=','Estudiante-UDEC')->count();
+    $users_count_no_grupo = DB::table('users')->where('estado', 'N')->Where('rol','=','Estudiante-UDEC')->count();
+    $users_count_ubication_grupo =DB::select("select ubicacion, count(ubicacion) cantidad from users WHERE rol = 'Estudiante-UDEC' group by ubicacion");
+    $users_count_age_grupo =DB::select("select edad, count(edad) cantidad from users WHERE rol = 'Estudiante-UDEC' group by edad");
+    $users_count_genre_grupo =DB::select("select genero, count(genero) cantidad from users WHERE rol = 'Estudiante-UDEC' group by genero");
+    $users_count_rol_grupo =DB::select("select rol, count(rol) cantidad from users WHERE rol = 'Estudiante-UDEC' group by rol");
+
+    return view('users.index',compact('users','users_count','users_count_ubication','users_count_genre','users_count_age','users_count_rol','users_count_no','users_grupo',
+        'users_count_grupo',
+        'users_count_no_grupo',
+        'users_count_ubication_grupo',
+        'users_count_age_grupo',
+        'users_count_genre_grupo',
+        'users_count_rol_grupo'
+
+
+
+        ));
     }
 
     /**
@@ -52,7 +73,7 @@ $users = DB::table('users')
     public function store(Request $request)
     {
 
-$mensaje = "Registro Exitoso! ";
+$mensaje = "Registro Exitoso! INGRESA A TU CORREO PARA CONFIRMAR TU INSCRIPCION ! ";
      try { 
 
 

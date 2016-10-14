@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'smtp'),
+    'driver' => env('MAIL_DRIVER', 'sendmail'),
 
     /*
     |--------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'conversatic@gmail.com', 'name' => 'Conversa - TIC'],
+    'from' => ['address' => 'contacto@conversatic-fusagasuga.com', 'name' => 'Conversa - TIC Fusagasugá'],
 
     /*
     |--------------------------------------------------------------------------

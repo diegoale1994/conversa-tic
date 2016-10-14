@@ -4,14 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-	<meta property="og:url"                content="http://conversa-tic.audiplantas.com/" />
+	<meta property="og:url"                content="http://conversatic-fusagasuga.com/" />
 	<meta property="og:type"               content="Conversa TIC" />
 	<meta property="og:title"              content="Conversa TIC Fusagasuga" />
 	<meta property="og:description"        content="Un dia de inspiracion para pensar y actuar en grande" />
 
 
     <title>ConversaTic</title>
-
+    <link rel="icon" type="image/png" href="images/icono.png" />
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/font-awesome.min.css" rel="stylesheet">
 	<link href="css/main.css" rel="stylesheet">
@@ -23,8 +23,9 @@
 
 @if (Session::has('message'))
 
-@if (Session::get('message') != 'Registro Exitoso! ' )
-    <div class="alert alert-danger exito-mensage" id="msg" >
+@if (Session::get('message') != 'Registro Exitoso! INGRESA A TU CORREO PARA CONFIRMAR TU INSCRIPCION ! ' )
+    <div class="alert alert-danger exito-mensage" id="msg" style="height:100px">
+  <br>
 	  {{ Session::get('message') }}
 	</div>
 @endif
@@ -34,8 +35,9 @@
 
 @if (Session::has('message'))
 
-@if (Session::get('message') == 'Registro Exitoso! ' )
-    <div class="alert alert-success error-mensage" id="msg" style="">
+@if (Session::get('message') == 'Registro Exitoso! INGRESA A TU CORREO PARA CONFIRMAR TU INSCRIPCION ! ' )
+    <div class="alert alert-success error-mensage" id="msg" style="height:100px">
+  <br>
 	  {{ Session::get('message') }}
 	</div>
 @endif
@@ -134,9 +136,16 @@
 					<img class="img-responsive" src="images/watch.png" alt="">
 				</div>				
 				<div class="col-md-4 col-md-offset-2 col-sm-5">
+				<br><br>
 					<h2><a href="#contact" style="color:black"> Inscribete !</a>  se agota el tiempo</h2>
 				</div>				
-				<div class="col-sm-7 col-md-6">					
+				<div class="col-sm-7 col-md-6">
+					
+						<center><h3><strong>21</strong> de octubre de <strong>2016</strong></h3></center>
+					    <center><h3>Hora: <strong>5PM</strong></h3></center>
+					    <center><h3>Cámara de comercio Fusagasugá:<strong>Avenida Las Palmas <span style="text-transform: capitalize;">nro.</span>  20-55</strong></h3></center>
+								
+					<br>		
 					<ul id="countdown">
 						<li>					
 							<span class="days time-font">00</span>
@@ -155,8 +164,21 @@
 							<p class="">segundos</p>
 						</li>				
 					</ul>
+				
 				</div>
 			</div>
+
+			<style type="text/css">
+				.hora{
+					background-color:#e67e22;
+					padding: 10px;
+					color: black;
+					border: 10px solid #d35400;
+				}
+				.hora h3{
+					font-size: 25px;
+				}
+			</style>
 		<!--	<div class="cart">
 				<a href="#"><i class="fa fa-shopping-cart"></i> <span>Purchase Tickets</span></a>
 			</div> -->
@@ -247,7 +269,7 @@
 
 				   <div class="col-sm-8">
 				  
-				   <iframe width="640" height="360" src="https://www.youtube.com/embed/DZnxwKUViY4" frameborder="0" allowfullscreen></iframe>
+				   <iframe style="width:100%; " height="360" src="https://www.youtube.com/embed/DZnxwKUViY4" frameborder="0" allowfullscreen></iframe>
 				   </div>
 				   <div class="col-sm-4">
 				   <a class="twitter-timeline" data-height="350" href="https://twitter.com/ConversaTICFusa">Tweets by ConversaTICFusa</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -304,6 +326,96 @@
 	</section><!--/#twitter-feed-->
 
 
+		<section id="sponsor">
+
+			<div class="container">
+			<h2>PATROCINADORES</h2>
+				
+</div>
+
+<aside class="clients">
+        <div class="container-fluid">
+            <div id="clients-carousel" class="carousel slide " data-ride="carousel">
+            <!-- Wrapper for slides -->
+              <div class="carousel-inner bar" >
+                <div class="item active">
+                    <div class="row barra">
+                        <div class="col-md-4 col-sm-6">
+                            <a target="_blank" href="http://www.theeaglelabs.com/">
+                              <center>    <img src="images/EagleLabs.png" class="img-responsive tama" alt=""></center>  
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <a target="_blank" href="http://www.mintic.gov.co/">
+                              <center>    <img src="images/mintic.png" class="img-responsive tama mintic" alt=""></center> 
+                            </a>
+                        </div>
+                        <div class="col-md-4 col-sm-6">
+                            <a target="_blank" href="http://www.mintic.gov.co/">
+                              <center>    <img src="images/gente.png" class="img-responsive tama mintic" alt=""></center> 
+                            </a>
+                        </div>
+                
+                    </div>
+                </div><!-- /.item -->
+                <div class="item ">
+                    <div class="row barra">
+
+                         <div class="col-md-3 col-sm-6">
+                            <a target="_blank" href="https://www.redvolucion.gov.co/">
+                              <center>    <img src="images/red.jpg" class="img-responsive tama " alt=""></center> 
+                            </a>
+                        </div>
+                         <div class="col-md-3 col-sm-6">
+                            <a target="_blank" href="http://www.ccb.org.co/La-Camara-CCB/Nuestras-sedes/Sede-Fusagasuga" class="">
+                               <center>   <img   src="images/camara.png" class="img-responsive tama camara" alt=""></center> 
+                            </a>
+                        </div>
+                     
+                        <div class="col-md-3 col-sm-6">
+                            <a target="_blank" href="http://www.ccb.org.co/Clusters/Cluster-de-Software-y-TI">
+                              <center>  <img src="images/cluster.jpg" class="img-responsive tama camara" alt=""></center> 
+                            </a>
+                        </div>
+
+                         <div class="col-md-3 col-sm-6">
+                            <a target="_blank" href="http://centrocomercialmanila.com/">
+                              <center>    <img src="images/manila.png" class="img-responsive tama " alt=""></center> 
+                            </a>
+                        </div>
+                       
+                                             
+                    </div> 
+                </div><!-- /.item -->
+
+
+
+                </div><!-- /.carousel-inner -->
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+                <!-- Indicators -->
+                  <ol class="carousel-indicators">
+                    <li data-target="#clients-carousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#clients-carousel" data-slide-to="1" class=""></li>
+                  </ol><!-- /ol -->
+
+            </div><!-- /.carousel -->
+        </div><!-- /.container -->
+    </aside>
+
+
+					
+				
+							
+			<br><br>
+			<div class="light" id="h" >
+				<img  class="img-responsive " height="10" src="images/light.png" alt="">
+			</div>
+		
+	</section><!--/#sponsor-->
 
 
 
@@ -318,75 +430,10 @@
 
 
 
-	<section id="sponsor">
-		<div id="sponsor-carousel" class="carousel slide" data-interval="false">
-			<div class="container">
-			<h2>PATROCINADORES</h2>
-				<div class="row">
-					<div class="col-xs-6 col-md-3 col-sm-3 col-lg-3">
-									
-				
-									<center><h5><a class="a-show" target="_blank" href="http://www.theeaglelabs.com/">
-
-										<img class="img-responsive " src="images/EagleLabs.png" alt="event-image">
-
-										</a></h5></center>
-                                        <div class="text-con">
-											<h3><strong>THE EAGLE LABS</strong></h3>
-											<h5> Empresa líder en la prestación de servicios de "Hacking Ético" y "Penetration Test", con soluciones innovadoras enfocadas a verificar los controles de ciberseguridad con los más altos estándares de calidad, generando total confianza en nuestros clientes y nuestra sociedad desde el año 2012, con más de quinientos (500) proyectos asociados a nuestros servicios.
-                                            </h5>
-
-                                              <br>
-											
-										</div>
-					
-						</div>
-<div class="col-xs-1 col-md-1 col-sm-1 col-lg-1">
-</div>
-						<div class="col-xs-6 col-md-3 col-sm-3 col-lg-3">
-							
-				
-									<center>	<h5><a class="a-show" target="_blank" href="http://www.mintic.gov.co/">
-                                            <img class="img-responsive " src="images/mintic.png" alt="event-image" 	style="z-index:344;">
-										</a></h5></center>
-										<br>
-										<center>
-
-
-									
-
-
-
-	<h5><a class="a-show" target="_blank" href="http://www.mintic.gov.co/">
-                                            <img class="img-responsive " src="images/gente.png" alt="event-image" 	style="z-index:344;">
-										</a></h5></center>
-
-<center>	<h5><a class="a-show" target="_blank" href="http://www.mintic.gov.co/">
-                                            <img class="img-responsive " src="images/red.png" alt="event-image" 	style="z-index:344;">
-										</a></h5></center>
-										<br>
-										<center>
 
 
 
 
-                                        <div class="text-con">
-											<h3><strong></strong></h3>
-											<h5>  </h5>
-
-									
-											
-										</div>
-					
-						</div>
-					</div>
-				</div>				
-			</div>
-			<div class="light">
-				<img class="img-responsive" src="images/light.png" alt="">
-			</div>
-		</div>
-	</section><!--/#sponsor-->
 
 	<section >
 		<div id="map">
@@ -405,7 +452,8 @@
 						<div class="contact-address" style="padding-left:15px">
 							<h3>Contacto</h3>
 							<address>
-							<i class="fa fa-envelope"></i> conversatic@gmail.com<br>
+							<i class="fa fa-envelope"></i> contacto@conversatic-fusagasuga.com<br>
+                                                        <i class="fa fa-twitter"></i> @ConversaTICFusa<br>
 				 			<i class="fa fa-envelope"></i> julian23salinas@gmail.com<br>
 			            	<i class="fa fa-twitter"></i> @julsal23<br>
 						    <i class="fa fa-skype"></i>  julian.salinas23<br>
@@ -421,7 +469,16 @@
 							<input name="_token" type="hidden" value="{{ csrf_token() }}">
 							<h1>Registro Conversa TIC <strong>Fusagasuga</strong></h1> 	
 
-					<h3><span class="registrados">Registrados  </span><span class="num-registrados">{{ 50+$numeroRegistrados }}</span></h3> 
+					
+
+				
+							@if ( $numeroRegistrados  >= 50 )
+							  <h3><span class="registrados">Registrados  </span><span class="num-registrados">
+							       {{ 50+$numeroRegistrados }}
+							  </span></h3> 
+							@endif
+
+					
 
 						<div class="form-group">
 								<label for="name">Ingresa tu nombre</label>
@@ -469,7 +526,7 @@
 						</div>
 						<div class="form-group">
 								<label for="twitter">Ingresa tu pagina de twitter</label>
-								<input class="form-control" name="twitter" type="text" required placeholder="@example">
+								<input class="form-control" name="twitter" type="text"  placeholder="@example">
 						</div>
 						<div class="form-group">
 								<label for="twitter">Ingresa tu telefono</label>
@@ -591,6 +648,46 @@
 	.somos{
 		font-size: 25px;
 	}
+        .light {
+ 		height: 200px;
+		width: 200px;
+	}
+	.bordear{
+       border-radius: 20px;
+    height: 130px;
+	}
+.camara{
+width:170px;
+}
+.tama{
+ 		height: 100px;
+ 	}
+ 	.bar{
+ 		background-color: white;
+ 		
+ 
+ 	}
+ 	.barra{
+ 		background-color: white;
+ 		padding-top: 10px;
+ 		padding-bottom: 10px;
+ 	}
+ 	.clients{
+ 		
+ 		padding-top: 10px;
+ 		padding-bottom: 10px;
+
+ 	}
+
+ 	.mintic{
+ 		margin-top: 18px;
+ 		height: 70px;
+ 	}
+
+ 	.camara {
+ 		margin-top: 15px;
+ 		height: 80px;
+ 		    }
 </style>
 
     <script type="text/javascript" src="js/jquery.js"></script>
@@ -605,7 +702,7 @@
     <script type="text/javascript" src="js/jquery.nav.js"></script>
     <script type="text/javascript" src="js/main.js"></script>  
     <script type="text/javascript">
-	$(document).ready(function() {if ( $("#msg") ) {$("#msg").delay(2000).fadeOut("slow");}});
+	$(document).ready(function() {if ( $("#msg") ) {$("#msg").delay(5000).fadeOut("slow");}});
 </script>
 </body>
 </html>

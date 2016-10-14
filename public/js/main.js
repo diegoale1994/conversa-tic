@@ -75,8 +75,8 @@ jQuery(function($) {'use strict',
 
 	map = new GMaps({
 		el: '#gmap',
-		lat:  4.338748,
-		lng: -74.367333,
+		lat:  4.341282,
+		lng: -74.365748,
 		scrollwheel:false,
 		zoom: 16,
 		panControl : false,
@@ -89,8 +89,8 @@ jQuery(function($) {'use strict',
 	var image = 'images/map-icon.png';
     var marker =	map.addMarker({
 		title: 'Conversa Tic',
-		lat:  4.338748,
-		lng: -74.367333,
+		lat:  4.341282,
+		lng: -74.365748,
 		icon: image,
 		animation: google.maps.Animation.DROP,
 		verticalAlign: 'bottom',
@@ -109,6 +109,8 @@ jQuery(function($) {'use strict',
       '<p>Fecha: Octubre 21 de 2016 '+
       '</p>'+
       '<p>Hora: 5PM '+
+      '</p>'+
+      '<p>Lugar: CÁMARA DE COMERCIO FUSAGASUGÁ - AVENIDA LAS PALMAS Nro. 20-55 '+
       '</p>'+
       '</div>'+
       '</div>';
