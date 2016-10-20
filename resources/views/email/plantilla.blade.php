@@ -41,7 +41,7 @@
 
 
   
-   <h5>Patrocinadores</h5>
+   <h5>Apoyan</h5>
    <a href="http://www.mintic.gov.co/portal/604/w3-channel.html" target="_blank"><img class="img-responsive" src="https://upload.wikimedia.org/wikipedia/commons/c/c2/MinTIC_%28Colombia%29_logo.png" alt="slider" width="200" height="100"></a>
    
    <a href="https://www.redvolucion.gov.co/" target="_blank"><img class="img-responsive" src="http://1.bp.blogspot.com/-NQVE5Raeptg/U-kwXzPxxOI/AAAAAAAAAAw/MQtFn6Yzna4/s320/logo+redvolucion.png" alt="slider" width="200" height="100"></a>

@@ -15,7 +15,7 @@ return [
     |
     */
 
-    'driver' => env('MAIL_DRIVER', 'sendmail'),
+    'driver' => env('MAIL_DRIVER', 'mail'),
 
     /*
     |--------------------------------------------------------------------------
@@ -28,7 +28,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.gmail.com'),
+    'host' => env('MAIL_HOST', 'a2plcpnl0838.prod.iad2.secureserver.net'),
 
     /*
     |--------------------------------------------------------------------------
@@ -54,7 +54,7 @@ return [
     |
     */
 
-    'from' => ['address' => 'contacto@conversatic-fusagasuga.com', 'name' => 'Conversa - TIC Fusagasugá'],
+    'from' => ['address' => 'conversatic@conversatic-fusagasuga.com', 'name' => 'Conversa - TIC Fusagasugá'],
 
     /*
     |--------------------------------------------------------------------------

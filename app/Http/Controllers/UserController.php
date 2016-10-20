@@ -72,36 +72,53 @@ $users_grupo = DB::table('users')->Where('rol','=','Estudiante-UDEC')
      */
     public function store(Request $request)
     {
-
 $mensaje = "Registro Exitoso! INGRESA A TU CORREO PARA CONFIRMAR TU INSCRIPCION ! ";
+
      try { 
 
+$respuesta_c=$request['g-recaptcha-response'];
+if ($respuesta_c != '') {
+    $secret='6LcQWgkUAAAAAGEEyaeTmQUp6GBCCiJ4FEfuftID';
+    $id=$_SERVER["REMOTE_ADDR"];
+    $var= file_get_contents("https://www.google.com/recaptcha/api/siteverify?secret=$secret&response=$respuesta_c&remoteip=$id");
+    $arreglo= json_decode($var, true);
 
- $token = str_random(100);
+    if ($arreglo['success']) {
+
+        $token = str_random(100);
         $data['token']= $token;
         $data['nombre']= $request->name;
 
+              User::create([
+                    'name' => $request['name'],
+                    'email' => $request['email'],
+                    'edad' => $request['edad'],
+                    'rol' => $request['rol'],
+                    'genero' => $request['genero'],
+                    'ubicacion' => strtolower($request['ubicacion']),
+                    'twitter' => $request['twitter'],
+                    'telefono' => $request['telefono'],
+                    'fecha' => \Carbon\Carbon::today()->toDateString(),
+                    'token' => $token,
+                    'estado' => 'N'
+
+            ]);
+            
+              Mail::send('email.plantilla',['data'=>$data],function($msg) use ($request){
+                $msg -> subject('CONFIRMA TU REGISTRO');
+                $msg->to($request->email);
+            });   
+    }else{
+         $mensaje = "";     
+         return redirect('/')->with(compact('numeroRegistrados'))->with('message',$mensaje);
+    }
+    
+}else{
+   $mensaje = "llene en catcha !! ";
+}
 
 
-  User::create([
-        'name' => $request['name'],
-        'email' => $request['email'],
-        'edad' => $request['edad'],
-        'rol' => $request['rol'],
-        'genero' => $request['genero'],
-        'ubicacion' => strtolower($request['ubicacion']),
-        'twitter' => $request['twitter'],
-        'telefono' => $request['telefono'],
-        'fecha' => \Carbon\Carbon::today()->toDateString(),
-        'token' => $token,
-        'estado' => 'N'
 
-]);
-
-  Mail::send('email.plantilla',['data'=>$data],function($msg) use ($request){
-    $msg -> subject('CONFIRMA TU REGISTRO');
-    $msg->to($request->email);
-  });
 } catch(\Illuminate\Database\QueryException $ex){ 
   $mensaje = "Este correo ya se encuentra Registrado !! ";
 }   

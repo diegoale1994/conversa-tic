@@ -3,6 +3,14 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="Author" content="ConversaTic">
+  <meta name="Description" content="ConversaTic Fusagasugá  - Un dia de inspiracion para pensar y actuar en grande">
+  <meta name="Keywords" content="tic,paz,conversa,Fusagasugá,emprendimiento,gobierno,digital,inteligentes,startups,innovacion,UDEC,Smart City">
+  <meta name="Robots" content="all">
+  <meta name="Distribution" content="global">
+  <meta name="Language" content="spanish">
+  <meta name="Revisit" content="1 days">
     
 	<meta property="og:url"                content="http://conversatic-fusagasuga.com/" />
 	<meta property="og:type"               content="Conversa TIC" />
@@ -52,7 +60,7 @@
 					<div class="pull-right social-icons">
 						<a target="_blank" href="https://twitter.com/ConversaTICFusa"><i class="fa fa-twitter"></i></a>
 						<a target="_blank" href="#"><i class="fa fa-facebook"></i></a>
-						<a target="_blank" href="#"><i class="fa fa-google-plus"></i></a>
+						<!--<a target="_blank" href="#"><i class="fa fa-google-plus"></i></a>-->
 						<a target="_blank" href="https://www.youtube.com/channel/UCXlBQ_3DJ3LRgpKYhdx-A_g"><i class="fa fa-youtube"></i></a>
 					</div>
 				</div>     
@@ -77,7 +85,7 @@
 		                    <li class="scroll"><a href="#event">Ponentes</a></li>
 		                    <li class="scroll"><a href="#about">Nosotros</a></li>                     
 		                    <li class="no-scroll"><a href="#twitter">Twitter</a></li>
-		                    <li class="no-scroll"><a href="#sponsor">Patrociandores</a></li>
+		                    <li class="no-scroll"><a href="#sponsor">Apoyan</a></li>
 		                    <!--  <li class="no-scroll"><a href="#streaming">streaming</a></li> -->
 		                   <!-- <li><a class="no-scroll" href="#" target="_blank">PURCHASE TICKETS</a></li> -->
 		                    <li class="scroll"><a href="#contact">Registro</a></li>       
@@ -310,10 +318,13 @@
 					<br class="hidden-xs">
 					<br class="hidden-xs">
 					<br class="hidden-xs">
+                                        <p style="font-size:25px"><strong>Organizan:</strong></p>
+					<p style="font-size:22px">Ingeniero Julián Salinas y equipo emprendedores Fusagasugá </p>
+
 					<i class="frase"><i style='font-size: 22px;'>“Cualquier cosa que la mente pueda concebir y creer, puede ser conseguida”</i style='font-size: 18px;'> Napoleon Hill</i>
 					<br>
 					<br>	
-					<p style='text-align: justify;font-size: 20px;' >Somos un grupo de emprendedores Fusagasugueños, buscamos apropiar el buen desarrollo de las Tecnologías de Información y Comunicación (TIC) en el departamento de Cundinamarca-Colombia , desarrollamos iniciativas digitales de valor ciudadano en el ámbito social, gubernamental, económico y ambiental.</p>
+					<p style='text-align: justify;font-size: 20px;' >Somos un grupo de emprendedores Fusagasugueños, buscamos apropiar el buen desarrollo de las Tecnologías de Información y Comunicación (TIC) en el departamento de Cundinamarca-Colombia, desarrollamos iniciativas digitales de valor ciudadano en el ámbito social, gubernamental, económico y ambiental.</p>
 				
 				<br>
 		         </div>
@@ -329,7 +340,7 @@
 		<section id="sponsor">
 
 			<div class="container">
-			<h2>PATROCINADORES</h2>
+			<h2>APOYAN</h2>
 				
 </div>
 
@@ -471,17 +482,17 @@
 
 					
 
-				
+			
 							@if ( $numeroRegistrados  >= 50 )
 							  <h3><span class="registrados">Registrados  </span><span class="num-registrados">
-							       {{ 50+$numeroRegistrados }}
-							  </span></h3> 
+							       {{ $numeroRegistrados }}
+							  </span></h3>  
 							@endif
 
 					
 
 						<div class="form-group">
-								<label for="name">Ingresa tu nombre</label>
+								<label for="name">Ingresa tu nombre y apellido</label>
 								<input class="form-control" name="name" type="text" required>
 						</div>
 						<div class="form-group">
@@ -532,6 +543,12 @@
 								<label for="twitter">Ingresa tu telefono</label>
 								<input class="form-control" name="telefono" type="text" required>
 						</div>
+                                                
+                                                 
+						<div class="form-group">
+						<div class="g-recaptcha" data-sitekey="6LcQWgkUAAAAAHImwB7ypCpjncW4ehTB_uuAfJok"></div>
+						</div>
+
 						<input class="form-contro btn btn-primary" name="registro" value="Registrar" type="submit" required >
 						
 						</form>
@@ -688,8 +705,11 @@ width:170px;
  		margin-top: 15px;
  		height: 80px;
  		    }
+        .color-g{
+               color: red;
+ 		    }
 </style>
-
+    <script src='https://www.google.com/recaptcha/api.js'></script> 
     <script type="text/javascript" src="js/jquery.js"></script>
     <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB73-N-hRiVxeHcVKgLyRclsx5YpW1-O1M&callback=initMap"
