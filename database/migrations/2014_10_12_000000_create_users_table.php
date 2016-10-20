@@ -25,6 +25,7 @@ class CreateUsersTable extends Migration
             $table->date('fecha');
             $table->string('token',100)->unique();
             $table->string('estado',1);
+            $table->string('arrivo',1);
             $table->timestamps();
         });
     }

@@ -64,6 +64,17 @@ $users_grupo = DB::table('users')->Where('rol','=','Estudiante-UDEC')
         //
     }
 
+    public function ingreso($id){
+        $user = User::find($id);
+        $user -> arrivo = 'S';
+        $user -> save();
+
+        $users = DB::table('users')->Where('arrivo','<>','S')
+                ->orderBy('fecha', 'desc')
+                ->get();
+          return view('registro.index',compact('users'));
+    }
+
     /**
      * Store a newly created resource in storage.
      *
@@ -172,6 +183,26 @@ if ($respuesta_c != '') {
     public function destroy($id)
     {
         //
+    }
+
+    public function show_form(){
+
+
+        $users = DB::table('users')->Where('arrivo','<>','S')
+                ->orderBy('fecha', 'desc')
+                ->get();
+          return view('registro.index',compact('users'));
+    }
+
+    public function winner(){
+        $users = DB::table('users')->Where('arrivo','=','S')
+                ->orderBy('fecha', 'desc')
+                ->get();
+        $final_users = array();
+        foreach ($users as $user) {
+            $final_users[]= $user->name;
+        }
+        return view('winner.index',compact('final_users'));
     }
     public function confirm_user($token){
 
