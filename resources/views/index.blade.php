@@ -145,7 +145,7 @@
 				</div>				
 				<div class="col-md-4 col-md-offset-2 col-sm-5">
 				<br><br>
-					<h2><a href="#contact" style="color:black"> Inscribete !</a>  se agota el tiempo</h2>
+					<h2><a href="#contact" style="color:black"> </a>  </h2>
 				</div>				
 				<div class="col-sm-7 col-md-6">
 					
@@ -277,7 +277,10 @@
 
 				   <div class="col-sm-8">
 				  
+				    <!--
 				   <iframe style="width:100%; " height="360" src="https://www.youtube.com/embed/DZnxwKUViY4" frameborder="0" allowfullscreen></iframe>
+				   -->
+				  <center> <img class="img-responsive" src="images/programa.png" style="height:500px; width:50% "></center>
 				   </div>
 				   <div class="col-sm-4">
 				   <a class="twitter-timeline" data-height="350" href="https://twitter.com/ConversaTICFusa">Tweets by ConversaTICFusa</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -476,82 +479,30 @@
 				<div class="col-sm-5"  id="form-fond">
 						<div id="contact-section">
 							<div class="col-sm-9 col-sm-offset-3 col-lg-10 col-lg-offset-2 main">
-							<form method="POST" action="/registro" accept-charset="UTF-8">
-							<input name="_token" type="hidden" value="{{ csrf_token() }}">
-							<h1>Registro Conversa TIC <strong>Fusagasuga</strong></h1> 	
-
-					
-
-			
-							@if ( $numeroRegistrados  >= 50 )
-							  <h3><span class="registrados">Registrados  </span><span class="num-registrados">
-							       {{ $numeroRegistrados }}
-							  </span></h3>  
-							@endif
-
-					
-
-						<div class="form-group">
-								<label for="name">Ingresa tu nombre y apellido</label>
-								<input class="form-control" name="name" type="text" required>
-						</div>
-						<div class="form-group">
-						<label for="email">Ingresa tu email</label>
-								<input class="form-control" name="email" type="email" required placeholder="example@example.com">
-						</div>
-						<div class="form-group">
-								<label for="edad">Ingresa tu edad</label>
-						<select name="edad" class="form-control" required>
-						 <option selected  value="" disabled>Selección una opción </option>
-						  <option value="10a20">Mayor a 10 y menor a 20 </option>
-						  <option value="20a30">Mayor a 20 y menor a 30 </option>
-						  <option value="30a40">Mayor a 30 y menor a 40 </option>
-						  <option value="40aINF">Mayor a 40 años</option>
-						</select>
-						</div>
-						<div class="form-group">
-								<label for="rol">Ingresa tu rol</label>
-						<select name="rol" class="form-control" required>
-						 <option selected value="" disabled>Selección una opción </option>
-						  <option value="Estudiante">Estudiante </option>
-						  <option value="Empresario">Empresario</option>
-						  <option value="Publico">Servidor publico </option>
-						  <option value="General">Comunidad en general</option>
-						</select>
+				<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
 
 
-			
-						</div>
-						<div class="form-group">
-								<label for="genero">Ingresa tu genero</label>
-						<select name="genero" class="form-control" required>
-						 <option selected  value="" disabled>Selección una opción </option>
-						  <option value="M">Masculino </option>
-						  <option value="F">Femenino</option>
-						  <option value="O">Otro </option>
-						</select>
-						</div>
-						<div class="form-group">
-								<label for="ubicacion">Ingresa desde que sitio vienes</label>
-								<input class="form-control" name="ubicacion" type="text" required>
-						</div>
-						<div class="form-group">
-								<label for="twitter">Ingresa tu pagina de twitter</label>
-								<input class="form-control" name="twitter" type="text"  placeholder="@example">
-						</div>
-						<div class="form-group">
-								<label for="twitter">Ingresa tu telefono</label>
-								<input class="form-control" name="telefono" type="text" required>
-						</div>
-                                                
-                                                 
-						<div class="form-group">
-						<div class="g-recaptcha" data-sitekey="6LcQWgkUAAAAAHImwB7ypCpjncW4ehTB_uuAfJok"></div>
-						</div>
 
-						<input class="form-contro btn btn-primary" name="registro" value="Registrar" type="submit" required >
-						
-						</form>
 	</div>
 					    </div>
 					</div>

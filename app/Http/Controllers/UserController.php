@@ -63,6 +63,15 @@ $users_grupo = DB::table('users')->Where('rol','=','Estudiante-UDEC')
     {
         //
     }
+    
+
+
+     public function new_index()
+    {
+  
+          return view('registro.new_register');
+      
+    }
 
     public function ingreso($id){
         $user = User::find($id);
@@ -74,6 +83,58 @@ $users_grupo = DB::table('users')->Where('rol','=','Estudiante-UDEC')
                 ->get();
           return view('registro.index',compact('users'));
     }
+
+      /**
+     * Store a newly created resource in storage.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return \Illuminate\Http\Response
+     */
+    public function store_new(Request $request)
+    {
+       $mensaje = "Registro Exitoso!";
+
+     try { 
+
+
+        $token = str_random(100);
+        $data['token']= $token;
+        $data['nombre']= $request->name;
+
+              User::create([
+                    'name' => $request['name'],
+                    'email' => $request['email'],
+                    'edad' => $request['edad'],
+                    'rol' => $request['rol'],
+                    'genero' => $request['genero'],
+                    'ubicacion' => strtolower($request['ubicacion']),
+                    'twitter' => $request['twitter'],
+                    'telefono' => $request['telefono'],
+                    'fecha' => \Carbon\Carbon::today()->toDateString(),
+                    'token' => $token,
+                    'estado' => 'A',
+                    'arrivo' => 'S'
+
+            ]);
+            
+             /* Mail::send('email.plantilla',['data'=>$data],function($msg) use ($request){
+                $msg -> subject('CONFIRMA TU REGISTRO');
+                $msg->to($request->email);
+            });   */
+
+    
+    } catch(\Illuminate\Database\QueryException $ex){ 
+      $mensaje = "Este correo ya se encuentra Registrado !! ";
+    }   
+        
+    //$numeroRegistrados = DB::table('users')->count();
+    return redirect('/new_event_register')->with('message',$mensaje);
+    }
+
+
+
+
+
 
     /**
      * Store a newly created resource in storage.
@@ -115,10 +176,10 @@ if ($respuesta_c != '') {
 
             ]);
             
-              Mail::send('email.plantilla',['data'=>$data],function($msg) use ($request){
+             /* Mail::send('email.plantilla',['data'=>$data],function($msg) use ($request){
                 $msg -> subject('CONFIRMA TU REGISTRO');
                 $msg->to($request->email);
-            });   
+            });   */
     }else{
          $mensaje = "";     
          return redirect('/')->with(compact('numeroRegistrados'))->with('message',$mensaje);
@@ -195,7 +256,7 @@ if ($respuesta_c != '') {
     }
 
     public function winner(){
-        $users = DB::table('users')->Where('arrivo','=','S')
+        $users = DB::table('users')->Where('arrivo','=','S')->Where('rol','<>','Estudiante-UDEC')
                 ->orderBy('fecha', 'desc')
                 ->get();
         $final_users = array();
@@ -216,4 +277,6 @@ if ($respuesta_c != '') {
              return redirect('/');
         }
     }
+
+
 }
